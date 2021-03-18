@@ -3790,3 +3790,8 @@ input, select, textarea {
 			}
 
 		}
+
+.skill-tag {
+	background-color: lightgrey;
+	border-radius: 1em;
+}
