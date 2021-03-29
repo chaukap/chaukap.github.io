@@ -8,27 +8,27 @@ $(function() {
 
     var image2 = {
         "src": "images/scavenger_hunt_2.png",
-        "style": "width: 25em; height: 40em"
+        "style": "width: 250px; height: 400px"
     }
 
     var image2_correct = {
         "src": "images/scavenger_hunt_2_correct.png",
-        "style": "width: 25em; height: 40em"
+        "style": "width: 250px; height: 400px"
     }
 
     var image3 = {
         "src": "images/scavenger_hunt_3.JPEG",
-        "style": "width: 40em; height: 25em"
+        "style": "width: 300px; height: 200px"
     }
 
     var image3_correct = {
         "src": "images/scavenger_hunt_3_correct.JPEG",
-        "style": "width: 40em; height: 25em"
+        "style": "width: 300px; height: 200px"
     }
     
     var final_image = {
         "src": "images/scavenger_hunt_final.JPG",
-        "style": "width: 30em; height: 40em"
+        "style": "width: 280px; height: 400px"
     }
 
     $('#submit').click(function() {
