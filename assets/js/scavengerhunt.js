@@ -3,7 +3,7 @@ $(function() {
 
     var image1_correct = {
         "src": "images/scavenger_hunt_1_correct.jpeg",
-        "style": "width: 25em; height: 40em"
+        "style": "width: 250px; height: 400px"
     }
 
     var image2 = {
@@ -91,12 +91,15 @@ $(function() {
             $("#hint-image").attr("style", correctImage.style);
             $("#question").html(successMessage);
             round++;
-            await sleep("2000");
+            await sleep(2000);
             $("#question").html(nextClue);
+            $("#hint-image").attr("hidden", "");
             $("#hint-image").attr("src", nextImage.src);
             $("#hint-image").attr("style", nextImage.style);
+            await sleep(500);
+            $("#hint-image").removeAttr("hidden");
         } else {
-
+            $("#question").html(failureMessage);
         }
     }
 
