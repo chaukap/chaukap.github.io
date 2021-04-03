@@ -70,7 +70,7 @@ $(function() {
                 ],
                 "What a trip :)",
                 "Come on this is obvious...",
-                "Thanx for hunting for scavengers with me. Here's your next clue, unless McKenna just gives it to you. I don't fully understand how this works.",
+                `Thanx for hunting for scavengers with me. Here's Nick's clue: "Squaking at dawn to welcome the sunrise. This domesticated fowl is often a surprise. Making his way with a shine and glitter, previously hidden in J Rowley's shitter. This big chick bit has grown like a flower, even making his way into our 307 shower."`,
                 image3_correct,
                 final_image
             );
