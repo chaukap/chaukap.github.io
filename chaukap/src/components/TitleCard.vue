@@ -1,6 +1,10 @@
 <template>
-    <h1>Chandler Haukap</h1>
-    <h2 class="pseudo-input">{{ title }}<span class="pseudo-cursor">{{ cursor }}</span></h2>
+  <div class="max-width">
+    <div class="title-card-container">
+      <h1>Chandler Haukap</h1>
+      <h2 class="pseudo-input">{{ title }}<span class="pseudo-cursor">{{ cursor }}</span></h2>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -9,46 +13,49 @@ var index = 1;
 const titles = [
             "Software Developer",
             "Student",
-            "Data Scientist",
+            "(Aspiring) Data Scientist",
             "Plant Dad",
             "Hiker",
             "(Very Bad) Golfer",
             "Coffee Enthusiast"
           ]
+const timePerTitleMilliseconds = 5000;
+const transitionTimeMilliseconds = 1000;
+const cursorBlinkMilliseconds = 700;
 
 export default {
   name: 'TitleCard',
   data: function() {
       return {
           title: titles[0],
-          cursor: "l"
+          cursor: "|"
       }
   },
   mounted: function() {
       setInterval(() => {
           this.transitionElement();
-      }, 7000);
+      }, timePerTitleMilliseconds);
 
       setInterval(() => {
           if(this.cursor.length > 0) {
               this.cursor = "";
           } else {
-              this.cursor = "l";
+              this.cursor = "|";
           }
-      }, 700);
+      }, cursorBlinkMilliseconds);
   },
   methods: {
     async transitionElement() {
       var oldTitleLength = this.title.length;
       while(this.title.length > 0) {
         this.title = this.title.substring(0, this.title.length - 1);
-        await new Promise(r => setTimeout(r, 1000/oldTitleLength));
+        await new Promise(r => setTimeout(r, transitionTimeMilliseconds/oldTitleLength));
       }
 
       var i = 1;
       while(this.title.length < titles[index].length) {
         this.title = titles[index].substring(0, i);
-        await new Promise(r => setTimeout(r, 1000/titles[index].length));
+        await new Promise(r => setTimeout(r, transitionTimeMilliseconds/titles[index].length));
         i++;
       }
       
@@ -62,12 +69,43 @@ export default {
 
 
 <style scoped>
-.pseudo-input {
-    text-align: left;
-}
 .pseudo-cursor {
     font-size: 1.3em;
     font-weight: bolder;
     margin-left: 1px;
+}
+.pseudo-input {
+  text-align: left;
+}
+h1 {
+  color: white;
+  font-size: 4em;
+  margin-bottom: 0em;
+}
+h2 {
+  color: rgb(167, 167, 167);
+  margin-top: .1em;
+}
+.max-width {
+  top: 10%;
+  width: 100%;
+  position: fixed;
+}
+.title-card-container {
+  width: fit-content;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .pseudo-cursor {
+    font-size: 1.1em;
+  }
+  h1 {
+    font-size: 2em;
+    top: 5%;
+  }
+  .pseudo-input {
+    font-size: 1em;
+  }
 }
 </style>

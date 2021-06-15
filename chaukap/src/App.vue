@@ -1,5 +1,5 @@
 <template>
-  <PersonalSite msg="Welcome to Your Vue.js App"/>
+  <PersonalSite/>
 </template>
 
 <script>
@@ -21,5 +21,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  position: absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 </style>

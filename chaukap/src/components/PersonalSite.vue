@@ -1,10 +1,13 @@
 <template>
-  <h1>I'm revamping my site. Stay tuned!</h1>
+  <Background/>
   <TitleCard/>
+  <Link link="https://www.instagram.com/chans_been_busy/"/>
 </template>
 
 <script>
 import TitleCard from './TitleCard.vue'
+import Background from './Background.vue'
+import Link from './Link.vue'
 
 export default {
   name: 'HelloWorld',
@@ -12,29 +15,14 @@ export default {
     msg: String
   },
   components: {
-    TitleCard
+    TitleCard,
+    Background,
+    Link
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-h1 {
-  font-style:oblique;
-  color:blue;
-}
+
 </style>
