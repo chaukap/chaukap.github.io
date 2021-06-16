@@ -72,11 +72,9 @@ div {
   .link-padding {
     margin: 0.5em 0.5em;
   }
-
-
   div {
-    --icon-size: 5em;
-    --expanded-size: 6em;
+    --icon-size: 6em;
+    --expanded-size: 7em;
   }
 }
 

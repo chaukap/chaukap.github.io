@@ -84,7 +84,7 @@ export default {
 
 @media (max-width: 600px) {
   .links {
-    top: 17%
+    top: 20%
   }
   .main-content {
     top: 5%;
