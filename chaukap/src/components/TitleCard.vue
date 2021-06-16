@@ -1,10 +1,8 @@
 <template>
-  <div class="max-width">
     <div class="title-card-container">
       <h1>Chandler Haukap</h1>
       <h2 class="pseudo-input">{{ title }}<span class="pseudo-cursor">{{ cursor }}</span></h2>
     </div>
-  </div>
 </template>
 
 <script>
@@ -85,11 +83,6 @@ h1 {
 h2 {
   color: rgb(167, 167, 167);
   margin-top: .1em;
-}
-.max-width {
-  top: 10%;
-  width: 100%;
-  position: fixed;
 }
 .title-card-container {
   width: fit-content;
