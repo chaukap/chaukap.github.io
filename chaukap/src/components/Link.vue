@@ -52,7 +52,7 @@ div {
     margin-top: -0.4em;
   }
   .link-padding {
-    margin: 0.5em 2em;
+    margin: .75em 2em;
   }
 
   div {

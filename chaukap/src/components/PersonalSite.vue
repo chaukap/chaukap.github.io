@@ -1,6 +1,5 @@
 <template>
   <Background/>
-  <div class="fixed">
     <div class="main-content">
       <TitleCard/>
     </div>
@@ -25,7 +24,6 @@
           </div>
         </div>
       </div>
-    </div>
   </div>
   
 </template>
@@ -61,10 +59,9 @@ export default {
 <style scoped>
 .center-link {
   margin: auto;
-  width: 60%;
 }
 .main-content {
-  top: 10%;
+  top: 0.5em;
   width: 100%;
   position: fixed;
 }
@@ -72,7 +69,7 @@ export default {
   margin: auto;
   width: 100%;
   position: fixed;
-  top: 35%
+  top: 12em;
 }
 .link-row {
   position: relative;
@@ -84,10 +81,10 @@ export default {
 
 @media (max-width: 600px) {
   .links {
-    top: 20%
+    top: 8em;
   }
   .main-content {
-    top: 5%;
+    top: 1em;
   }
 }
 </style>
