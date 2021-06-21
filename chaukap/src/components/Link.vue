@@ -1,6 +1,6 @@
 <template>
   <div class="link-padding">
-    <a :href="link" target="_blank">
+    <a :href="link" target="_blank" v-on:click="logClick">
       <div class="link-container" :title="description"></div>
     </a>
   </div>
@@ -8,11 +8,24 @@
 </template>
 
 <script>
+import { ApplicationInsights } from '@microsoft/applicationinsights-web'
+
+const appInsights = new ApplicationInsights({ config: {
+  instrumentationKey: '2608f7ca-16c4-4d95-a308-6f3c1872c329'
+  /* ...Other Configuration Options... */
+} });
+
 export default {
   name: 'Link',
   props: {
       link: String,
       description: String
+  },
+  methods: {
+    logClick() {
+      appInsights.loadAppInsights();
+      appInsights.trackEvent({name:`Clicked on ${this.description}.`});
+    }
   }
 }
 </script>

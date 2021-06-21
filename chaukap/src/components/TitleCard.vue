@@ -29,7 +29,7 @@ export default {
           cursor: "|"
       }
   },
-  mounted: function() {
+  created: function() {
       setInterval(() => {
           this.transitionElement();
       }, timePerTitleMilliseconds);
