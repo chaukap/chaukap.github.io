@@ -81,8 +81,9 @@ h1 {
   margin-bottom: 0em;
 }
 h2 {
-  color: rgb(167, 167, 167);
+  color: rgb(201, 201, 201);
   margin-top: .1em;
+  font-weight: bold;
 }
 .title-card-container {
   width: fit-content;

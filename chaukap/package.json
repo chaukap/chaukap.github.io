@@ -10,6 +10,7 @@
   "dependencies": {
     "@microsoft/applicationinsights-web": "^2.6.3",
     "core-js": "^3.6.5",
+    "particles.js": "^2.0.0",
     "vue": "^3.0.0"
   },
   "devDependencies": {
