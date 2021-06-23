@@ -1,12 +1,12 @@
 <template>
-  <Link link="https://www.pinterest.com/chandler_haukap" description="Pinterest"/>
+  <Link link="https://www.ischool.berkeley.edu/people/chandler-haukap" description="Berkeley"/>
 </template>
 
 <script>
 import Link from './Link.vue'
 
 export default {
-  name: 'Pinterest',
+  name: 'Berkeley',
   components: {
       Link
   }
@@ -15,6 +15,6 @@ export default {
 
 <style scoped>
 :deep(.link-container) {
-    background-image: url("../assets/pinterest.png");
+    background-image: url("../assets/berkeley.png");
 }
 </style>

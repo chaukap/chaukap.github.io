@@ -36,7 +36,7 @@ import LinkedIn from './LinkedIn.vue'
 import GitHub from './GitHub.vue'
 import Facebook from './Facebook.vue'
 import Pinterest from './Pinterest.vue'
-import Shriners from './Shriners.vue'
+import Shriners from './Berkeley.vue'
 
 export default {
   name: 'HelloWorld',

@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style scoped>
-::v-deep .link-container {
+:deep(.link-container) {
     background-image: url("../assets/linkedin.png");
 }
 </style>
