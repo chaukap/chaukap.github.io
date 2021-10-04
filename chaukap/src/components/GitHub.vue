@@ -1,5 +1,5 @@
 <template>
-  <Link link="https://github.com/chaukap" description="GitHub"/>
+  <Link link="https://github.com/chaukap/Projects" description="GitHub"/>
 </template>
 
 <script>
