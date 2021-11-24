@@ -44,7 +44,8 @@ export default {
     async transitionElement() {
       i = true;
       while(i){
-        console.log("here");
+        await new Promise(r => setTimeout(r, timePerTitleMilliseconds));
+
         var oldTitleLength = this.title.length;
         while(this.title.length > 0) {
           this.title = this.title.substring(0, this.title.length - 1);
@@ -60,7 +61,6 @@ export default {
       
         index++;
         index = index % titles.length;
-        await new Promise(r => setTimeout(r, timePerTitleMilliseconds));
       }
     }
   }
