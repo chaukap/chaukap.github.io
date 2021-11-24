@@ -1,12 +1,12 @@
 <template>
-  <Link link="https://www.facebook.com/chandler.haukap" description="Facebook"/>
+  <Link link="https://reflectify.io/" description="My Spotify API hobby project, Reflectify"/>
 </template>
 
 <script>
 import Link from './Link.vue'
 
 export default {
-  name: 'Facebook',
+  name: 'PersonalProject',
   components: {
       Link
   }
@@ -15,6 +15,6 @@ export default {
 
 <style scoped>
 :deep(.link-container) {
-    background-image: url("../assets/facebook.png");
+    background-image: url("../assets/HobbyProjects.png");
 }
 </style>

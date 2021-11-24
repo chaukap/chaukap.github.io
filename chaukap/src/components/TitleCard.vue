@@ -30,9 +30,7 @@ export default {
       }
   },
   created: function() {
-      setInterval(() => {
-          this.transitionElement();
-      }, timePerTitleMilliseconds);
+      this.transitionElement();
 
       setInterval(() => {
           if(this.cursor.length > 0) {
@@ -44,21 +42,26 @@ export default {
   },
   methods: {
     async transitionElement() {
-      var oldTitleLength = this.title.length;
-      while(this.title.length > 0) {
-        this.title = this.title.substring(0, this.title.length - 1);
-        await new Promise(r => setTimeout(r, transitionTimeMilliseconds/oldTitleLength));
-      }
+      i = true;
+      while(i){
+        console.log("here");
+        var oldTitleLength = this.title.length;
+        while(this.title.length > 0) {
+          this.title = this.title.substring(0, this.title.length - 1);
+          await new Promise(r => setTimeout(r, transitionTimeMilliseconds/oldTitleLength));
+        }
 
-      var i = 1;
-      while(this.title.length < titles[index].length) {
-        this.title = titles[index].substring(0, i);
-        await new Promise(r => setTimeout(r, transitionTimeMilliseconds/titles[index].length));
-        i++;
-      }
+        var i = 1;
+        while(this.title.length < titles[index].length) {
+          this.title = titles[index].substring(0, i);
+          await new Promise(r => setTimeout(r, transitionTimeMilliseconds/titles[index].length));
+          i++;
+        }
       
-      index++;
-      index = index % titles.length;
+        index++;
+        index = index % titles.length;
+        await new Promise(r => setTimeout(r, timePerTitleMilliseconds));
+      }
     }
   }
 }
