@@ -1,4 +1,7 @@
 # Surveillance in Bulk
+
+### Chandler Haukap - February 12, 2022
+
 ## When is the government watching, and do you have a right to know?
 In 2014, the ACLU documented [47 civilians injured in no-knock warrants](https://www.aclu.org/report/war-comes-home-excessive-militarization-american-police
 ). Since then, the deaths of Breonna Taylor and Amir Locke have resulted in mass protests opposed to the issuance of no-knock warrants.
