@@ -26,11 +26,11 @@ These three mechanisms are a recipe for systematic oppression. The Dakota Access
 How could we ever know if the government is reading protesters’ texts? With private companies gagged and warrants issued in bulk, we cannot know the extent of the surveillance until years later. Luckily we can see some aggregated statistics from [Facebook](https://transparency.fb.com/data/government-data-requests/
 ) and [Twitter](https://transparency.twitter.com/en/reports/information-requests.html#2021-jan-jun). Both companies issue reports on government requests aggregated every 6 months. The number of requests for user information by the government increases every year at both companies, but the truly disturbing statistic is the number of accounts per request. 
 
-()[Place Facebook_Account_Requests.png here]
+<a href="https://chaukap.github.io/img/accounts_per_request_facebook.html" target="_blank"><img src="https://github.com/chaukap/chaukap.github.io/raw/main/img/Facebook_Account_Requests.png" alt="The government is requesting more accounts per request from Facebook"/></a>
 
 By dividing the number of accounts requested by the number of requests made, we get the average number of accounts per request. Facebook’s data shows a steady increase in the number of accounts per request which suggests that the government is emboldened to issue more bulk requests.
 
-()[Place Twitter_Account_Requests.png here]
+<a href="https://chaukap.github.io/img/accounts_per_request_twitter.html" target="_blank"><img src="https://github.com/chaukap/chaukap.github.io/raw/main/img/Twitter_Account_Requests.png" alt="The government is requesting more accounts per request from Twitter"/></a>
 
 Twitter’s data doesn’t trend as strongly upward, but the last half of 2021 is truly disturbing. Over 9 accounts per request! When will the government simply request an entire protest movement, or have they already?
 
