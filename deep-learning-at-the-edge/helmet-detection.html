@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Chandler Haukap</title>
+  <link rel="canonical" href="https://www.chaukap.github.io/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chandler Haukap's personal site">
+  <meta name="theme-color" content="#FD3519">
+  <meta name="generator" content="Hugo 0.54.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <meta property="og:title" content="Home">
+  <meta property="og:description" content="Chandler Haukap's personal site">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.chaukap.github.io/">
+  <meta itemprop="name" content="Home">
+  <meta itemprop="description" content="Chandler Haukap's personal site">
+</head>
+
+<body data-new-gr-c-s-check-loaded="8.896.0" data-gr-ext-installed="">
+  <header style="background-image:url('images/helmet-detection-background.jpg'); background-size: auto 100%;">
+    <div class="intro">
+      <h2 class="main-title">Helmet Detection</h2>
+      <h4>David Ristau, Grant Wilson, Chandler Haukap, and Courtney Smith</h4>
+      <div class="menu">
+        <p>
+          <a href="https://github.com/courtney-smith-97/w251_final" target="_blank" rel="external">
+            Project's GitHub Page
+          </a>
+        </p>
+        <p>
+          <a href="https://drive.google.com/file/d/1uVFT3pbONUImLhz149Nbe3cS7pgZS4-W/view?usp=sharing" target="_blank" rel="external">
+            Download the YOLOv5 Model
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="socials">
+      <a href="https://github.com/chaukap" class="social-link" target="_blank" rel="noopener">
+        <div class="icon">
+          <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+            role="img">
+            <path
+              d="M102.679 0H12.32C5.52 0 0 5.519 0 12.321v90.358C0 109.48 5.519 115 12.321 115h90.358c6.802 0 12.321-5.519 12.321-12.321V12.32C115 5.52 109.481 0 102.679 0zM71.182 98.494c-2.156.385-2.952-.95-2.952-2.053 0-1.386.051-8.471.051-14.195 0-4.005-1.335-6.546-2.9-7.881C74.878 73.313 84.89 72.003 84.89 55.6c0-4.671-1.669-7.007-4.39-10.01.436-1.105 1.9-5.648-.436-11.552-3.568-1.104-11.731 4.595-11.731 4.595-3.389-.95-7.06-1.438-10.679-1.438-3.62 0-7.29.488-10.679 1.438 0 0-8.163-5.699-11.73-4.595-2.337 5.878-.899 10.422-.437 11.551-2.72 3.004-4.004 5.34-4.004 10.011 0 16.326 9.574 17.712 19.072 18.765-1.232 1.104-2.336 3.003-2.72 5.724-2.44 1.104-8.677 3.004-12.4-3.568-2.335-4.056-6.545-4.39-6.545-4.39-4.159-.05-.282 2.619-.282 2.619 2.772 1.283 4.723 6.212 4.723 6.212 2.49 7.624 14.4 5.057 14.4 5.057 0 3.568.052 9.37.052 10.422 0 1.104-.77 2.438-2.952 2.053C27.21 92.821 15.35 76.701 15.35 57.86c0-23.564 18.02-41.456 41.585-41.456s42.663 17.892 42.663 41.456c.026 18.842-11.474 34.988-28.416 40.635zM46 82.81c-.488.103-.95-.102-1.001-.436-.051-.385.282-.719.77-.822.488-.05.95.154 1.001.488.077.334-.257.668-.77.77zm-2.439-.23c0 .333-.385.615-.898.615-.565.052-.95-.23-.95-.616 0-.333.385-.616.899-.616.487-.051.95.231.95.616zm-3.516-.283c-.103.334-.616.488-1.053.334-.488-.103-.821-.488-.719-.822.103-.334.617-.488 1.053-.385.513.154.847.54.719.873zm-3.158-1.386c-.23.282-.718.23-1.104-.154-.385-.334-.487-.822-.23-1.053.23-.282.718-.23 1.103.154.334.334.462.847.231 1.053zm-2.336-2.336c-.23.154-.667 0-.95-.385-.282-.385-.282-.822 0-1.001.283-.231.72-.052.95.333.283.385.283.847 0 1.053zm-1.668-2.49c-.231.23-.616.103-.899-.154-.282-.334-.333-.719-.102-.899.23-.23.616-.102.898.154.282.334.334.72.103.899zm-1.72-1.9c-.103.231-.436.283-.719.103-.334-.154-.488-.436-.385-.667.103-.154.385-.231.719-.103.334.18.488.462.385.667z">
+            </path>
+          </svg>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/chandler-haukap" class="social-link" target="_blank" rel="noopener">
+        <div class="icon">
+          <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+            role="img">
+            <path
+              d="M106.786 0H8.189C3.67 0 0 3.722 0 8.291v98.418C0 111.278 3.67 115 8.189 115h98.597c4.518 0 8.214-3.722 8.214-8.291V8.29C115 3.722 111.304 0 106.786 0zm-72.03 98.571H17.713V43.69h17.07V98.57h-.025zm-8.522-62.377c-5.467 0-9.882-4.44-9.882-9.883 0-5.442 4.415-9.882 9.882-9.882 5.442 0 9.883 4.44 9.883 9.882a9.87 9.87 0 0 1-9.883 9.883zm72.414 62.377H81.604V71.875c0-6.366-.129-14.555-8.856-14.555-8.882 0-10.242 6.931-10.242 14.093V98.57H45.46V43.69h16.352v7.495h.23c2.285-4.312 7.855-8.856 16.147-8.856 17.25 0 20.458 11.372 20.458 26.158V98.57z">
+            </path>
+          </svg>
+        </div>
+      </a>
+
+      <a href="https://chandler-haukap.medium.com" class="social-link" target="_blank" rel="noopener">
+        <div class="icon">
+          <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+            role="img">
+
+            <path
+              d="M0 0v115h115V0H0zm95.542 27.235l-6.16 5.905a1.81 1.81 0 0 0-.693 1.72v43.458c-.103.667.154 1.335.693 1.72l6.032 5.904v1.31h-30.29v-1.259l6.238-6.058c.616-.616.616-.795.616-1.72V43.074L54.625 87.123h-2.336l-20.202-44.05v29.52c-.18 1.233.257 2.49 1.13 3.39l8.111 9.83v1.31H18.277v-1.31l8.111-9.83a3.93 3.93 0 0 0 1.053-3.39v-34.14a2.93 2.93 0 0 0-.976-2.516l-7.213-8.702v-1.309h22.41l17.301 37.991 15.222-37.965h21.357v1.283z">
+            </path>
+
+          </svg>
+        </div>
+      </a>
+
+      <a href="https://twitter.com/ChandlerHaukap" class="social-link" target="_blank" rel="noopener">
+        <div class="icon">
+          <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+            role="img">
+
+            <path
+              d="M102.679 0H12.32C5.52 0 0 5.519 0 12.321v90.358C0 109.48 5.519 115 12.321 115h90.358c6.802 0 12.321-5.519 12.321-12.321V12.32C115 5.52 109.481 0 102.679 0zM90.126 40.763c.051.72.051 1.464.051 2.182 0 22.256-16.942 47.9-47.9 47.9-9.548 0-18.404-2.772-25.848-7.547 1.36.154 2.67.205 4.055.205 7.881 0 15.12-2.67 20.895-7.187-7.392-.154-13.604-5.006-15.735-11.68 2.593.385 4.929.385 7.598-.308a16.837 16.837 0 0 1-13.476-16.531v-.205a16.824 16.824 0 0 0 7.598 2.13 16.8 16.8 0 0 1-7.496-14.016c0-3.131.822-6.006 2.285-8.496a47.803 47.803 0 0 0 34.705 17.61c-2.387-11.424 6.161-20.69 16.429-20.69 4.851 0 9.215 2.027 12.296 5.313a32.99 32.99 0 0 0 10.678-4.056 16.792 16.792 0 0 1-7.393 9.267c3.389-.36 6.674-1.31 9.703-2.618a35.437 35.437 0 0 1-8.445 8.727z">
+            </path>
+          </svg>
+        </div>
+      </a>
+
+      <div class="photo-cred" style="font-size: small;">
+        Photo by
+        <a href="https://unsplash.com/@clementdelhaye?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+          Clement Delhaye
+        </a>
+        on
+        <a href="https://unsplash.com/s/photos/skiing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+          Unsplash
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="content-wrapper" style="background-image: linear-gradient(#dcedfd, #b1c5da);">
+    <main id="content">
+      <p class="c12 title" id="h.tpch87byqqgr"><span class="c13">Automating Helmet Compliance at Ski Resorts</span></p>
+      <p class="c9 subtitle" id="h.ccsr5zxssf2i"><span>David Ristau, Courtney Smith, Grant Wilson, and Chandler
+              Haukap</span></p>
+      <h1 class="c5" id="h.2ctxshyxdmkm"><span>O</span><span>verview</span></h1>
+      <p class="c0"><span>Skiing and snowboarding are extremely popular sports both globally and domestically, with 462
+              ski resorts operating in the United States alone in 2021 (</span><span class="c4"><a class="c6"
+                  href="https://www.google.com/url?q=https://nsaa.org/webdocs/Media_Public/IndustryStats/ski_areas_by_state_thru_2021.pdf&amp;sa=D&amp;source=editors&amp;ust=1650476739428399&amp;usg=AOvVaw0mg1tS0A5qjLY-h7EgoA30">NSAA
+                  2022</a></span><span>). </span><span>The subsidiaries of Vail Resorts alone reported a net income of
+              127.9 million dollars in the fiscal year 2021 (</span><span class="c4"><a class="c6"
+                  href="https://www.google.com/url?q=https://investors.vailresorts.com/news-releases/news-release-details/vail-resorts-reports-fiscal-2021-fourth-quarter-and-full-year&amp;sa=D&amp;source=editors&amp;ust=1650476739428774&amp;usg=AOvVaw3KbTPdVuuy8N5HzBg5a8BY">Vail
+                  Resorts 2022</a></span><span>).</span><span class="c1">&nbsp;These figures are expected to grow as
+              COVID-19 lockdown restrictions and visitor limits are lifted.</span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span>Increased visitor counts also increase the risk of injuries as trails and lifts get more crowded
+              and trail conditions deteriorate. Proper equipment is paramount in preventing injuries. The US Consumer
+              Product Safety Commission found that around 50% of head injuries could be prevented by the use of a helmet.
+              Although several countries have mandated helmet use for children, and several US states have considered
+              mandatory helmet legislation, the majority of US ski resorts do not currently mandate helmets for children
+              or adults; this may be partially due to difficulties around monitoring helmet usage or enforcing compliance.
+              (</span><span class="c4"><a class="c6"
+                  href="https://www.google.com/url?q=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3989528/&amp;sa=D&amp;source=editors&amp;ust=1650476739429357&amp;usg=AOvVaw16b44qzSZ5qdzj0Lb5bLLJ">Haider,
+                  Saleem, Bilaniuk, and Barraco 2014</a></span><span class="c1">). We believe that an automated system
+              that detects helmets could make compliance easier to enforce. Additionally, the system will give a more
+              accurate view of the rates of helmet usage for skiers and snowboarders.</span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span class="c1">Leveraging existing deep learning frameworks, our group was able to design a helmet
+              detection system that can be deployed on edge devices for use at ski resorts. </span></p>
+      <h1 class="c5" id="h.rkkf4iczu18s"><span>Data</span></h1>
+      <p class="c0"><span class="c1">Unfortunately, we could not locate a pre-labeled dataset of ski helmets. However,
+              there are multiple datasets that contain skiing images. By aggregating images of skis, we were able to
+              locate well over 1,000 examples of helmet compliance and non-compliance. </span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span>The ski images we used came from the Common Objects in Context (</span><span class="c4"><a
+                  class="c6"
+                  href="https://www.google.com/url?q=https://cocodataset.org/%23explore&amp;sa=D&amp;source=editors&amp;ust=1650476739430273&amp;usg=AOvVaw02Un5tpyzVmLWmVlXC7SFS">COCO</a></span><span
+              class="c1">) dataset. COCO was created by a team of researchers both from academia and private companies.
+              The dataset itself contains over 150,000 images. We selected COCO because we could easily filter the dataset
+              down to the 6,887 images labeled &ldquo;ski&rdquo;. Not all of these images were helpful. Some were too
+              blurry to tell if the wearer of the skis was wearing a helmet. Others contained no human at all or only an
+              image of their legs.</span></p>
+      <p class="c0"><span
+              style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 299.09px; height: 258.22px;"><img
+                  alt="" src="images/image10.png"
+                  style="width: 299.09px; height: 586.04px; margin-left: 0.00px; margin-top: -150.17px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                  title=""></span><span
+              style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 312.73px; height: 210.42px;"><img
+                  alt="" src="images/image8.png"
+                  style="width: 340.77px; height: 657.98px; margin-left: -15.10px; margin-top: -225.49px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                  title=""></span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span class="c1">Fortunately, we were able to repurpose 3,262 images that contained not only the skis
+              but also the head of the human wearing them. </span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span
+              style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 299.58px; height: 229.58px;"><img
+                  alt="" src="images/image12.png"
+                  style="width: 299.58px; height: 586.17px; margin-left: 0.00px; margin-top: -179.52px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                  title=""></span><span
+              style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 310.97px; height: 322.86px;"><img
+                  alt="" src="images/image4.png"
+                  style="width: 310.97px; height: 606.55px; margin-left: 0.00px; margin-top: -140.90px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                  title=""></span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span>Labeling the images was performed by hand. We used Roboflow&rsquo;s interface to draw the
+              bounding boxes and filter unusable images (</span><span class="c4"><a class="c6"
+                  href="https://www.google.com/url?q=https://roboflow.com/&amp;sa=D&amp;source=editors&amp;ust=1650476739431327&amp;usg=AOvVaw1gRfKWOaURmKOS5uy1LpRY">Roboflow</a></span><span
+              class="c1">). There was some debate on whether we should label compliance, i.e. helmets, noncompliance, i.e.
+              bare heads, Or both. We decided to label both. Our decision was based on the fact that the two labels are
+              mutually exclusive. Receiving a label of noncompliance does not impact the model&rsquo;s decision to also
+              label the image compliant. In this way, we are able to train two image classifiers at once: one that detects
+              bare heads and one that detects helmets. If this model were deployed at a ski resort the operators would be
+              able to choose the most performant label or some combination of the two labels at their discretion.</span>
+      </p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span class="c1">In addition, generating results of both positive and negative examples would make
+              iterating on the model much easier in the future.</span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span
+              style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 299.58px; height: 300.50px;"><img
+                  alt="" src="images/image5.png"
+                  style="width: 299.58px; height: 300.50px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                  title=""></span><span
+              style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 300.59px; height: 294.86px;"><img
+                  alt="" src="images/image7.png"
+                  style="width: 300.59px; height: 294.86px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                  title=""></span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span class="c1">From the 3,262 images, we annotated 2,374 examples of noncompliance and 1,605
+              examples of helmet use. On average each image contained 1.2 annotations with some images providing more than
+              6 unique examples. The number of annotations per image is visualized below:</span></p>
+      <p class="c0"><span
+              style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 421.50px; height: 270.22px;"><img
+                  alt="" src="images/image2.png"
+                  style="width: 421.50px; height: 270.22px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                  title=""></span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span class="c1">We augmented the data with a horizontal flip that gave us a total of 4,966 images.
+              These images were divided into train/set sets using an 80/20 split for a total of 3,968 training images, 638
+              validation images, and 360 test images.</span></p>
+      <h1 class="c5" id="h.bo2ezkxope5v"><span>Tools and Data Pipeline</span></h1>
+      <p class="c0"><span class="c1">To develop this application multiple tools were used in the training pipeline as well
+              as at inference time.</span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span>As mentioned previously, the data source for this project was the COCO dataset. We then applied
+              custom labels, &lsquo;helmet&rsquo; and &lsquo;no helmet&rsquo; to our dataset using Roboflow. Roboflow was
+              a key tool in the model training and iteration phase. Alternative labeling tools that were considered were
+          </span><span class="c4"><a class="c6"
+                  href="https://www.google.com/url?q=https://github.com/ivangrov/ModifiedOpenLabelling&amp;sa=D&amp;source=editors&amp;ust=1650476739433279&amp;usg=AOvVaw0aRjytMJFRidze5SXSDhAG">Open
+                  Labeling</a></span><span>, </span><span class="c4"><a class="c6"
+                  href="https://www.google.com/url?q=https://www.makesense.ai&amp;sa=D&amp;source=editors&amp;ust=1650476739433516&amp;usg=AOvVaw3KPhcmBghbt3ZGbi1cYVMI">Make
+                  Sense AI</a></span><span>, and </span><span class="c4"><a class="c6"
+                  href="https://www.google.com/url?q=https://docs.aws.amazon.com/sagemaker/latest/dg/sms.html&amp;sa=D&amp;source=editors&amp;ust=1650476739433779&amp;usg=AOvVaw0j_PVQYoG4bYh0C_SwC6DN">AWS
+                  sagemaker ground truth</a></span><span class="c1">. Open labeling and Make Sense AI do not include the
+              ability to manage a dataset or distribute labeling amongst multiple team members. AWS ground truth and
+              Roboflow enable labeling to be distributed amongst multiple team members, however AWS ground truth is more
+              limited in dataset management as well as being relatively costly. Roboflow was selected because it allows
+              for easier modification and versioning of a dataset and is free to use when assembling a public dataset.
+          </span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span>During training, each yolov5 model was evaluated using Weights and Biases, otherwise known as
+              wandb (</span><span class="c4"><a class="c6"
+                  href="https://www.google.com/url?q=https://wandb.ai/site&amp;sa=D&amp;source=editors&amp;ust=1650476739434349&amp;usg=AOvVaw0QEJAbFPFrnHslc6jpLR0C">wandb</a></span><span
+              class="c1">). With wandb each training run is able to be easily compared on multiple metrics. Another
+              particularly useful feature of wandb is the bounding box debugger. This allows images from the validation
+              set to be compared at each step in the training process at multiple confidence thresholds. This enables
+              models to be precisely evaluated to determine the types of mistakes it makes.</span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span class="c1">At inference time we use several tools to deploy the yolov5 model and save the
+              relevant data to the cloud. Our application pipeline is shown in the diagram below in two possible
+              configurations.</span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span
+              style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 193.33px;"><img
+                  alt="" src="images/image3.png"
+                  style="width: 624.00px; height: 193.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                  title=""></span></p>
+      <p class="c0"><span>Img sources: [</span><span class="c4"><a class="c6"
+                  href="https://www.google.com/url?q=https://www.google.com/url?sa%3Di%26url%3Dhttps%253A%252F%252Fcommons.wikimedia.org%252Fwiki%252FFile%253AVideo_camera_icon.svg%26psig%3DAOvVaw1-SU0LOB6OSLTNj5FFyRKs%26ust%3D1649747586427000%26source%3Dimages%26cd%3Dvfe%26ved%3D0CAoQjRxqFwoTCLDLqeq6i_cCFQAAAAAdAAAAABAD&amp;sa=D&amp;source=editors&amp;ust=1650476739435211&amp;usg=AOvVaw11CGmajRhLbBAIekGLzktf">resort
+                  cam</a></span><span>, </span><span class="c4"><a class="c6"
+                  href="https://www.google.com/url?q=https://pytorch.org/hub/ultralytics_yolov5/&amp;sa=D&amp;source=editors&amp;ust=1650476739435479&amp;usg=AOvVaw2uKbpvxUBg8bImJo8eTObU">yolov5</a></span><span>,
+          </span><span class="c4"><a class="c6"
+                  href="https://www.google.com/url?q=https://www.nvidia.com/en-us/about-nvidia/legal-info/logo-brand-usage/&amp;sa=D&amp;source=editors&amp;ust=1650476739435754&amp;usg=AOvVaw0c3p9hXZ4YkPkSheaGlUpb">jetson
+                  nano</a></span><span>, </span><span class="c4"><a class="c6"
+                  href="https://www.google.com/url?q=https://mqtt.org/&amp;sa=D&amp;source=editors&amp;ust=1650476739435975&amp;usg=AOvVaw3yImBDTs4LFgPNfgL7dNhK">mqtt</a></span><span>,
+          </span><span class="c4"><a class="c6"
+                  href="https://www.google.com/url?q=https://en.wikipedia.org/wiki/Amazon_Elastic_Compute_Cloud%23/media/File:AWS_Simple_Icons_Compute_Amazon_EC2_Instances.svg&amp;sa=D&amp;source=editors&amp;ust=1650476739436326&amp;usg=AOvVaw1xX5zyeOy6CFPiqBqtoPMX">ec2</a></span><span>,
+          </span><span class="c4"><a class="c6"
+                  href="https://www.google.com/url?q=https://devblog.xero.com/amazon-s3-with-asp-net-core-2-0-cece44c77cf1?gi%3D48a041903a52&amp;sa=D&amp;source=editors&amp;ust=1650476739436676&amp;usg=AOvVaw1HGSJxcqO5c8ne-emugTAa">s3</a></span><span
+              class="c1">]</span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span>The use case we envision for this project would be deployed on an edge device at a ski resort.
+              To simulate this, we used a jetston nano 2gb as our edge device (</span><span class="c4"><a class="c6"
+                  href="https://www.google.com/url?q=https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/education-projects/&amp;sa=D&amp;source=editors&amp;ust=1650476739437217&amp;usg=AOvVaw0xFz38AUxZIuy569eDraxe">jetson
+                  nano</a></span><span class="c1">). The yolov5 model runs on this jetson edge device which evaluates a
+              video feed using a USB camera as the input source. As the yolov5 model generates predictions they are saved
+              as a .csv file locally on the Jetson device.</span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span class="c1">In the first configuration we make the assumption that the cameras that the model is
+              running on have an ethernet connection to the network. In this context, we are able to write our .csv file
+              directly to an s3 bucket using the boto3 python package. This is the simplest configuration, and we believe
+              to be the most realistic since it would be hard to imagine all trail cameras on a large ski resort
+              transmitting over a wifi network.</span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span class="c1">In the second configuration, we assume that our edge devices are transmitting over an
+              unreliable network connection. In this context we would propose using MQTT as a messaging service to upload
+              the data to an s3 bucket. The jetson device would send the .csv file as a message using MQTT to an EC2
+              instance in AWS. The messaging quality of service (QoS) that would be used in MQTT is &lsquo;1&rsquo; which
+              means the message is sent at least once, giving the highest chance for message delivery. We chose this QoS
+              in this context because we are assuming that network coverage on a ski resort may be intermittent. In the
+              EC2 instance we process the file by saving each csv file into an S3 bucket with a timestamp as the
+              filename.</span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span class="c1">Our current application operates on the infrastructure described in configuration
+              one. We believe that this is more realistic, and it is much simpler to deploy.</span></p>
+      <h1 class="c5" id="h.h338del1qivt"><span class="c2">Model Design</span></h1>
+      <p class="c0"><span>We decided to architect the solution around the YOLOv5 framework given its success in modeling
+              custom classes within image data (</span><span class="c4"><a class="c6"
+                  href="https://www.google.com/url?q=https://github.com/ultralytics/yolov5&amp;sa=D&amp;source=editors&amp;ust=1650476739438421&amp;usg=AOvVaw2GneYtszKTGwa6O-KP9Oe8">YOLOv5</a></span><span
+              class="c1">). Since we were using RoboFlow to create bounding boxes and preprocess the image dataset, we
+              were easily able to download the processed images via the RoboFlow API, formatted properly for YOLOv5.
+          </span></p>
+      <h1 class="c5" id="h.434fvnkqqphc"><span
+              style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 337.45px; height: 510.50px;"><img
+                  alt="" src="images/image9.png"
+                  style="width: 337.45px; height: 510.50px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                  title=""></span></h1>
+      <p class="c0"><span class="c1">As discussed in our previous section, our model is training on images of skiers with
+              helmet and no-helmet classifications. We additionally marked certain irrelevant pictures as null. Below, we
+              see that non-skiing pictures and pictures without subjects in the foreground are excluded. This is to keep
+              the training relevant to the skiing context and reduce error from mislabelling heads that were too far away
+              to determine whether someone was wearing a helmet. This also kept our model from trying to overreach and
+              predict on people that are too far away.</span></p>
+      <h1 class="c5" id="h.6qdp5u4rd228"><span
+              style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 624.00px;"><img
+                  alt="" src="images/image13.jpg"
+                  style="width: 624.00px; height: 624.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                  title=""></span></h1>
+      <p class="c0"><span class="c1">Because our model required strict labeling of helmets vs. hats/beanies/gaiters, we
+              used images that were close enough to a face to make that distinction. This allowed us to use smaller image
+              sizes when training the model. We ended up deciding on 416px images and training for 100 epochs.</span></p>
+      <p class="c0"><span>&nbsp;</span><span
+              style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 416.00px; height: 416.00px;"><img
+                  alt="" src="images/image6.jpg"
+                  style="width: 416.00px; height: 416.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                  title=""></span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span class="c1">The training process completed in 3.119 hours and produced the results below. Based
+              on our classification error scores, it looks like our model could benefit from more epochs to allow the
+              model to better fit to our training data. We also see that our precision and recall are fairly close
+              together. This means that our accuracy was fairly balanced between false positives and false negatives. For
+              a simple monitoring solution this is probably fine, however if we were to implement this solution to fine
+              skiers that aren&rsquo;t complying with safety rules, we may want to take greater care to increase the
+              precision so we only fine people who are definitively not wearing helmets.</span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span>100 Epochs: &nbsp;</span><span
+              style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 312.00px;"><img
+                  alt="" src="images/image11.png"
+                  style="width: 624.00px; height: 312.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                  title=""></span></p>
+      <p class="c0"><span class="c1">150 Epochs:</span></p>
+      <p class="c0"><span
+              style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 312.00px;"><img
+                  alt="" src="images/image1.png"
+                  style="width: 624.00px; height: 312.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                  title=""></span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c11 c3"><span class="c1"></span></p>
+      <h1 class="c5" id="h.rrwa21ubbg2"><span class="c2">Challenges</span></h1>
+      <p class="c0"><span class="c1">The classifier had difficulty differentiating between helmets and other types of hats
+              and beanies. This difficulty was exacerbated by images that were not head-on, as well as by google
+              positioning. The outline of a helmet or hat was sometimes partially obscured in images where the rider had
+              their goggles pulled up on top of their helmet or hat. </span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span class="c1">The lower accuracy in images that are not head-on could lead to limitations in the
+              positioning of the edge devices running the helmet detection system. Additionally, the frame is constrained
+              by the Jetson. </span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <h1 class="c5" id="h.epj4mkz4wnxo"><span>Alternative Designs</span></h1>
+      <p class="c0"><span>A design decision that our group had to make early in the process was what to label. Our first
+              thought was to teach the model what a helmet looks like, then train it to look for humans without a
+              corresponding &ldquo;helmet&rdquo; label. This method might have been fruitful, but it wouldn&rsquo;t have
+              told us anything about what it looks like to </span><span class="c8">not </span><span class="c1">wear a
+              helmet. </span></p>
+      <p class="c0 c3"><span class="c1"></span></p>
+      <p class="c0"><span class="c1">We also considered labeling only non-compliance. This would have achieved our goal of
+              detecting individuals without helmets, but we worried that this approach might produce less usable data for
+              ski resorts. Looking for only positive examples would make retraining on new examples more difficult.
+          </span></p>
+      <p class="c3 c11"><span class="c1"></span></p>
+      <div>
+          <p class="c0 c3"><span class="c1"></span></p>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-wrapper"></div>
+  </footer>
+</body>
+</html>
