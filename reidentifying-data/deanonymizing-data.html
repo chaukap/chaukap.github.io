@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Anonymous Datasets</title>
+        <link rel="canonical" href="https://www.chaukap.github.io/">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Privacy Concerns of the Baltimore Open Data Project">
+        <meta name="theme-color" content="#FD3519">
+        <meta name="generator" content="Hugo 0.54.0">
+
+        <link rel="stylesheet" href="style.css">
+
+        <meta property="og:title" content="Home">
+        <meta property="og:description" content="Privacy Concerns of the Baltimore Open Data Project">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.chaukap.github.io/">
+        <meta itemprop="name" content="Home">
+        <meta itemprop="description" content="Privacy Concerns of the Baltimore Open Data Project">
+</head>
+
+<body data-new-gr-c-s-check-loaded="8.896.0" data-gr-ext-installed="">
+        <header style="background-image:url('images/Cityscape.jpg'); background-size: auto 100%;">
+                <div class="intro">
+                        <h2 class="main-title">Anonymous Datasets</h2>
+                        <h4>Jillian Luicci, Amanjot Samra, and Chandler Haukap</h4>
+                        <div class="menu">
+                                <p>
+                                        <a href="https://github.com/chaukap/failures_of_anonymous_data" target="_blank"
+                                                rel="external">
+                                                Project's GitHub Page
+                                        </a>
+                                </p>
+                        </div>
+                </div>
+
+                <div class="socials">
+                        <a href="https://github.com/chaukap" class="social-link" target="_blank" rel="noopener">
+                                <div class="icon">
+                                        <svg width="35px" height="35px" viewBox="0 0 115 115"
+                                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+                                                <path
+                                                        d="M102.679 0H12.32C5.52 0 0 5.519 0 12.321v90.358C0 109.48 5.519 115 12.321 115h90.358c6.802 0 12.321-5.519 12.321-12.321V12.32C115 5.52 109.481 0 102.679 0zM71.182 98.494c-2.156.385-2.952-.95-2.952-2.053 0-1.386.051-8.471.051-14.195 0-4.005-1.335-6.546-2.9-7.881C74.878 73.313 84.89 72.003 84.89 55.6c0-4.671-1.669-7.007-4.39-10.01.436-1.105 1.9-5.648-.436-11.552-3.568-1.104-11.731 4.595-11.731 4.595-3.389-.95-7.06-1.438-10.679-1.438-3.62 0-7.29.488-10.679 1.438 0 0-8.163-5.699-11.73-4.595-2.337 5.878-.899 10.422-.437 11.551-2.72 3.004-4.004 5.34-4.004 10.011 0 16.326 9.574 17.712 19.072 18.765-1.232 1.104-2.336 3.003-2.72 5.724-2.44 1.104-8.677 3.004-12.4-3.568-2.335-4.056-6.545-4.39-6.545-4.39-4.159-.05-.282 2.619-.282 2.619 2.772 1.283 4.723 6.212 4.723 6.212 2.49 7.624 14.4 5.057 14.4 5.057 0 3.568.052 9.37.052 10.422 0 1.104-.77 2.438-2.952 2.053C27.21 92.821 15.35 76.701 15.35 57.86c0-23.564 18.02-41.456 41.585-41.456s42.663 17.892 42.663 41.456c.026 18.842-11.474 34.988-28.416 40.635zM46 82.81c-.488.103-.95-.102-1.001-.436-.051-.385.282-.719.77-.822.488-.05.95.154 1.001.488.077.334-.257.668-.77.77zm-2.439-.23c0 .333-.385.615-.898.615-.565.052-.95-.23-.95-.616 0-.333.385-.616.899-.616.487-.051.95.231.95.616zm-3.516-.283c-.103.334-.616.488-1.053.334-.488-.103-.821-.488-.719-.822.103-.334.617-.488 1.053-.385.513.154.847.54.719.873zm-3.158-1.386c-.23.282-.718.23-1.104-.154-.385-.334-.487-.822-.23-1.053.23-.282.718-.23 1.103.154.334.334.462.847.231 1.053zm-2.336-2.336c-.23.154-.667 0-.95-.385-.282-.385-.282-.822 0-1.001.283-.231.72-.052.95.333.283.385.283.847 0 1.053zm-1.668-2.49c-.231.23-.616.103-.899-.154-.282-.334-.333-.719-.102-.899.23-.23.616-.102.898.154.282.334.334.72.103.899zm-1.72-1.9c-.103.231-.436.283-.719.103-.334-.154-.488-.436-.385-.667.103-.154.385-.231.719-.103.334.18.488.462.385.667z">
+                                                </path>
+                                        </svg>
+                                </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/chandler-haukap" class="social-link" target="_blank"
+                                rel="noopener">
+                                <div class="icon">
+                                        <svg width="35px" height="35px" viewBox="0 0 115 115"
+                                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+                                                <path
+                                                        d="M106.786 0H8.189C3.67 0 0 3.722 0 8.291v98.418C0 111.278 3.67 115 8.189 115h98.597c4.518 0 8.214-3.722 8.214-8.291V8.29C115 3.722 111.304 0 106.786 0zm-72.03 98.571H17.713V43.69h17.07V98.57h-.025zm-8.522-62.377c-5.467 0-9.882-4.44-9.882-9.883 0-5.442 4.415-9.882 9.882-9.882 5.442 0 9.883 4.44 9.883 9.882a9.87 9.87 0 0 1-9.883 9.883zm72.414 62.377H81.604V71.875c0-6.366-.129-14.555-8.856-14.555-8.882 0-10.242 6.931-10.242 14.093V98.57H45.46V43.69h16.352v7.495h.23c2.285-4.312 7.855-8.856 16.147-8.856 17.25 0 20.458 11.372 20.458 26.158V98.57z">
+                                                </path>
+                                        </svg>
+                                </div>
+                        </a>
+
+                        <a href="https://chandler-haukap.medium.com" class="social-link" target="_blank" rel="noopener">
+                                <div class="icon">
+                                        <svg width="35px" height="35px" viewBox="0 0 115 115"
+                                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+
+                                                <path
+                                                        d="M0 0v115h115V0H0zm95.542 27.235l-6.16 5.905a1.81 1.81 0 0 0-.693 1.72v43.458c-.103.667.154 1.335.693 1.72l6.032 5.904v1.31h-30.29v-1.259l6.238-6.058c.616-.616.616-.795.616-1.72V43.074L54.625 87.123h-2.336l-20.202-44.05v29.52c-.18 1.233.257 2.49 1.13 3.39l8.111 9.83v1.31H18.277v-1.31l8.111-9.83a3.93 3.93 0 0 0 1.053-3.39v-34.14a2.93 2.93 0 0 0-.976-2.516l-7.213-8.702v-1.309h22.41l17.301 37.991 15.222-37.965h21.357v1.283z">
+                                                </path>
+
+                                        </svg>
+                                </div>
+                        </a>
+
+                        <a href="https://twitter.com/ChandlerHaukap" class="social-link" target="_blank" rel="noopener">
+                                <div class="icon">
+                                        <svg width="35px" height="35px" viewBox="0 0 115 115"
+                                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+
+                                                <path
+                                                        d="M102.679 0H12.32C5.52 0 0 5.519 0 12.321v90.358C0 109.48 5.519 115 12.321 115h90.358c6.802 0 12.321-5.519 12.321-12.321V12.32C115 5.52 109.481 0 102.679 0zM90.126 40.763c.051.72.051 1.464.051 2.182 0 22.256-16.942 47.9-47.9 47.9-9.548 0-18.404-2.772-25.848-7.547 1.36.154 2.67.205 4.055.205 7.881 0 15.12-2.67 20.895-7.187-7.392-.154-13.604-5.006-15.735-11.68 2.593.385 4.929.385 7.598-.308a16.837 16.837 0 0 1-13.476-16.531v-.205a16.824 16.824 0 0 0 7.598 2.13 16.8 16.8 0 0 1-7.496-14.016c0-3.131.822-6.006 2.285-8.496a47.803 47.803 0 0 0 34.705 17.61c-2.387-11.424 6.161-20.69 16.429-20.69 4.851 0 9.215 2.027 12.296 5.313a32.99 32.99 0 0 0 10.678-4.056 16.792 16.792 0 0 1-7.393 9.267c3.389-.36 6.674-1.31 9.703-2.618a35.437 35.437 0 0 1-8.445 8.727z">
+                                                </path>
+                                        </svg>
+                                </div>
+                        </a>
+
+                        <div class="photo-cred" style="font-size: small;">
+                                Photo by 
+                                <a href="https://unsplash.com/@bertsz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                                        bert b
+                                </a> 
+                                on 
+                                <a href="https://unsplash.com/s/photos/network?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                                        Unsplash
+                                </a>
+                        </div>
+                </div>
+        </header>
+
+        <div class="content-wrapper" style="background-image: linear-gradient(#ffffff, #bbbbbb);">
+                <main id="content">
+                        <div>
+                                <p class="c13 c3"><span class="c0"></span></p>
+                        </div>
+                        <p class="c23 title" id="h.yg6upep84twn"><span class="c16">Privacy Concerns of the Baltimore
+                                        Open Data
+                                        Project</span></p>
+                        <p class="c14 subtitle" id="h.gnuel79nk8z6"><span>Jillian Luicci, Amanjot Samra, and Chandler
+                                        Haukap</span></p>
+                        <h2 class="c7" id="h.trsohfjpa043">Introduction</h2>
+                        <p class="c1"><span>We are a group of student researchers at the University of California,
+                                        Berkeley advocating for
+                                        the removal of potentially harmful data and/or datasets from the Open Baltimore
+                                        data portal and the
+                                        Baltimore PD social media accounts. </span><span>One of our team members came
+                                        across Open Baltimore while
+                                        examining a slew of public data sets, and we are writing this report to express
+                                        our concern for the people
+                                        of Baltimore and the magnitude of risks posed to them by the release of these
+                                        data sets and information.
+                                </span><span class="c0">We will examine the legal and ethical implications associated
+                                        with the release of these
+                                        datasets, as well as the risks and some recommendations to remediate said risks.
+                                </span></p>
+                        <h2 class="c7" id="h.ivmw5apbcluo"><span>Overview of the data &nbsp;</span></h2>
+                        <p class="c1"><span class="c0">Accountability, accessibility, and transparency are three
+                                        important aspects when it
+                                        comes to examining how governments collect and use information. The government
+                                        of Baltimore hopes to achieve
+                                        greater levels in each of these aspects in the context of its data collection
+                                        via its Open Baltimore data
+                                        inventory, which contains hundreds of public data sets. Furthermore, the city
+                                        hopes to facilitate the
+                                        data-driven work requirements of its employees by consolidating data and making
+                                        it available in one place.
+                                        The focus of this letter is the data sets related to arrests, 9/11 calls, and
+                                        the administration of Naloxone
+                                        for drug overdoses that have been included in this data portal by the government
+                                        of Baltimore.</span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span>According to the Department&rsquo;s website, the goal of publishing this
+                                        data is
+                                        &ldquo;</span><span>to promote transparency and data sharing between city
+                                        government and its
+                                        citizens&rdquo;. </span><span>(Open Baltimore)</span><span>&nbsp;</span><span>In
+                                        Helen
+                                </span><span>Nissenbaum&rsquo;s </span><span>work on contextual integrity, Nissenbaum
+                                        emphasized the importance
+                                        of understanding the context of datasets(</span><span>Nissenbum</span><span
+                                        class="c0">, 2011). Applying
+                                        this framework, it is our understanding that citizens expect access to this data
+                                        because it is collected on
+                                        the back of government work which is funded by citizen tax dollars. Further, we
+                                        believe that the intention
+                                        of releasing this data is to allow citizens to analyze the types and locations
+                                        of various crimes and
+                                        incidents. This information has the potential to help people make informed
+                                        decisions regarding where to live
+                                        or whether additional safety measures are necessary for certain areas.</span>
+                        </p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span class="c0">Nissenbaum&#39;s contextualization allows us to conceptualize our
+                                        privacy boundaries,
+                                        while Daniel Solove&rsquo;s privacy taxonomy enables us to identify specific
+                                        attacks against the Baltimore
+                                        data. By identifying attacks and proactively preventing them we avoid any
+                                        privacy harms.</span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span class="c0">The elements from the taxonomy that we&rsquo;ve identified as the
+                                        most vulnerable in
+                                        Baltimore&rsquo;s data are (Solov 2006):</span></p>
+                        <ol class="c10 lst-kix_6fu0nbpev4vh-0 start" start="1">
+                                <li class="c1 c8 li-bullet-0"><span>Information Processing</span><span class="c0">, in
+                                                the form of aggregation,
+                                                identification, insecurity, and exclusion.</span></li>
+                                <li class="c1 c8 li-bullet-0"><span class="c0">Invasion, in the form of decisional
+                                                inference. </span></li>
+                        </ol>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span class="c0">While there are interesting arguments to be made for changes to
+                                        information
+                                        collection by the government, it is well outside the power of Open Baltimore to
+                                        affect this collection.
+                                        Therefore, we will exclude it in our suggestions. Similarly, by virtue of the
+                                        public nature of this dataset,
+                                        we cannot expect to protect the information from dissemination attacks. However,
+                                        Open Baltimore does have
+                                        agency to mitigate both information processing and invasion risks.</span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span class="c0">The dangers posed by information processing have sweeping social
+                                        consequences.
+                                        Baltimore&rsquo;s data contains information on some of the most vulnerable
+                                        members of society like crime
+                                        victims and drug addicts. A malicious actor could use relatively straightforward
+                                        data aggregation to
+                                        identify individuals and compromise their sense of security. Conversely, there
+                                        could be exclusionary
+                                        practices inherent in this data that reduces its efficacy in
+                                        &ldquo;opening&rdquo; Baltimore.</span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span class="c0">Invasion attacks in the form of decisional inference lead to
+                                        systemic injustices
+                                        migrating from the physical world to the digital. What decisions can companies
+                                        make using this information?
+                                        Do we as a society accept that this information could be used by employers to
+                                        make employment decisions?
+                                        Will franchises avoid building stores in an area that receives too many 911
+                                        calls? Baltimore must be
+                                        conscious of the types of decisions that this information could be used to
+                                        make.</span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span>Next, we will provide some examples of attacks that malicious actors could
+                                        perform, keeping in
+                                        mind both Nissenbaum&rsquo;s contextual privacy and Solove&rsquo;s taxonomy. We
+                                        will also suggest changes
+                                        that minimize our concerns.</span></p>
+                        <h2 class="c7" id="h.7wylt18acfyd">Reidentifying overdose victims</h2>
+                        <p class="c1"><span class="c0">Baltimore releases two datasets on the distribution of Naloxone,
+                                        a nasal spray often
+                                        sold under the brand name Narcan. One dataset describes the administration of
+                                        Naloxone by EMTs, and the
+                                        other documents occurrences of medical personnel leaving Naloxone doses with
+                                        families that have an at-risk
+                                        individual living with them.</span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span class="c0">Naloxone is used to reverse the effects of an opioid overdose.
+                                        Therefore, the
+                                        administration or distribution of naloxone implies that an individual is
+                                        addicted to either heroin or
+                                        over-the-counter painkillers like oxycodone. These individuals would suffer
+                                        irreversible reputational damage
+                                        if the knowledge that they are addicted to opioids were to enter the public
+                                        domain. Not only that but their
+                                        families could be damaged as well by the social stigma of living with an addict.
+                                </span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span class="c0">Both naloxone datasets published by the city of Baltimore
+                                        anonymize the data by
+                                        including only three pieces of information. </span></p>
+                        <ol class="c10 lst-kix_yexv2fj76yl7-0 start" start="1">
+                                <li class="c1 c8 li-bullet-0"><span class="c0">The date of the administration.</span>
+                                </li>
+                                <li class="c1 c8 li-bullet-0"><span class="c0">The number of doses either administered
+                                                or distributed.</span>
+                                </li>
+                                <li class="c1 c8 li-bullet-0"><span class="c0">The zip code of the
+                                                administration.</span></li>
+                        </ol>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span class="c0">Given the size of the city of Baltimore, this information on its
+                                        own is not enough to
+                                        identify an individual with reasonable accuracy. However, in our investigation
+                                        we identified other datasets
+                                        that could be combined with the naloxone dataset to gain additional information
+                                        about the victim.</span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span class="c0">Imagine the following scenario:</span></p>
+                        <ol class="c10 lst-kix_wv7fcav0gtjb-0 start" start="1">
+                                <li class="c1 c8 li-bullet-0"><span class="c0">A victim overdoses and is found by a
+                                                family member or
+                                                friend.</span></li>
+                                <li class="c1 c8 li-bullet-0"><span class="c0">The family member or friend calls 911 to
+                                                report a narcotics
+                                                overdose.</span></li>
+                                <li class="c1 c8 li-bullet-0"><span class="c0">EMTs arrive and administer naloxone.
+                                        </span></li>
+                                <li class="c1 c8 li-bullet-0"><span class="c0">The police arrive and charge the victim
+                                                with possession of a
+                                                controlled dangerous substance (CDS).</span></li>
+                        </ol>
+                        <p class="c1"><span class="c0">We identified a way to use this scenario to re-identify the
+                                        victim.</span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span>First, it is possible to join the 911 call log to either of the naloxone
+                                        datasets using zip code
+                                        and date. Then, you can narrow the calls by searching for
+                                        &ldquo;narcotics&rdquo; in the call category. This
+                                        gives you a list of drug-related 911 calls on the same day and in the same zip
+                                        code as an opioid overdose.
+                                        While this doesn&rsquo;t guarantee a match, it does narrow down the search for a
+                                        malicious actor looking to
+                                        exploit the opioid epidemic. And, because the 911 call logs contain a street
+                                        address, we can further
+                                        identify the victims if they are charged with a crime like possession of a
+                                        controlled substance. </span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span class="c0">Another dataset on Open Baltimore contains data on arrests for
+                                        6-month periods. The
+                                        data contains information about the person who is arrested, including age,
+                                        gender, and race. There are
+                                        further details regarding the coordinates, address, neighborhood, date, and time
+                                        of the arrest. Lastly, the
+                                        data contains details about the charge(s) associated with each arrest.</span>
+                        </p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span class="c0">With the street address and date of a potential opioid overdose,
+                                        we can join it to
+                                        the arrest records. Then, we can narrow matches down to arrest for the
+                                        possession of a controlled dangerous
+                                        substance (CDS). This would probably prove more fruitful for reidentifying
+                                        overdose victims in possession of
+                                        heroin. The arrest records enable us to learn about the age, race, and gender of
+                                        the individual.</span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span class="c0">In summary, by performing an aggregation attack, a malicious
+                                        actor could learn the
+                                        street address, race, gender, and age of a victim of opioid addiction. This
+                                        amount of information is more
+                                        than enough to perform an identification attack to learn the name of the victim
+                                        using their social media or
+                                        by questioning their neighbors. Once de-anonymized, the information could be
+                                        subject to a secondary use
+                                        attack. Perhaps an insurance provider uses a decisional inference attack to deny
+                                        the victim healthcare.
+                                        Perhaps a drug cartel uses it to target customers.</span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span>Hopefully, this dystopian scenario is enough to convince Open Baltimore that
+                                        they need to secure
+                                        the privacy of their citizens. To identify how Open Baltimore can go about this,
+                                        we would first like to
+                                        explain our understanding of the context in which this data is presented. Opioid
+                                        addiction is recognized by
+                                        the federal government as an </span><span
+                                        class="c9">epidemic</span><span>&nbsp;(</span><span class="c5"><a class="c6"
+                                                href="https://www.google.com/url?q=https://www.hhs.gov/opioids/about-the-epidemic/index.html&amp;sa=D&amp;source=editors&amp;ust=1650492462421289&amp;usg=AOvVaw2_VRVohkL5dPQvSh_G_boV">Department
+                                                of Health and Human Services 2021</a></span><span class="c0">) and as an
+                                        epidemic, the naloxone datasets
+                                        are published with the intent to track its spread. We therefore propose the
+                                        following hierarchy to the
+                                        criticality of granular data:</span></p>
+                        <ol class="c10 lst-kix_8fthwo2dteyx-0 start" start="1">
+                                <li class="c1 c8 li-bullet-0"><span class="c0">Location</span></li>
+                                <li class="c1 c8 li-bullet-0"><span class="c0">Date</span></li>
+                                <li class="c1 c8 li-bullet-0"><span class="c0">Doses</span></li>
+                        </ol>
+                        <p class="c1"><span class="c0">We don&rsquo;t want to sacrifice any more precision of the
+                                        location data because it
+                                        is critical in tracking. We can, however, reduce a little precision in the date.
+                                        If the data were aggregated
+                                        to the weekly level, it could still be used for tracking the epidemic over a
+                                        monthly or yearly scale while
+                                        simultaneously increasing the difficulty of an attacker sevenfold. </span></p>
+                        <h2 class="c7" id="h.f0awqsjv9k59">Reidentifying murderers and their
+                                        victims</h2>
+                        <p class="c1"><span>On the Baltimore Police Department website (</span><span class="c5"><a
+                                                class="c6"
+                                                href="https://www.google.com/url?q=https://www.baltimorepolice.org/&amp;sa=D&amp;source=editors&amp;ust=1650492462422171&amp;usg=AOvVaw2UyA__twEt4s6CVR1ZovhG">https://www.baltimorepolice.org/</a></span><span
+                                        class="c0">), there is a &lsquo;Follow Us&rsquo; Section with links to the
+                                        Department&rsquo;s various social
+                                        media profiles. The Baltimore City Police Department actively uses these
+                                        channels to connect with the
+                                        community. These pages contain information about active investigations, arrests,
+                                        and community events. At
+                                        the time this letter was written, the Facebook page had 232k followers, the
+                                        Twitter account had 295k
+                                        followers, and the Instagram account had 20k followers. </span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span class="c0">On the aforementioned social media pages, the posts about murder
+                                        arrests in
+                                        particular are very detailed. The posts contain information on the
+                                        suspect&rsquo;s name, age, arrest
+                                        charges, and even a photograph. Using this text information and inferring the
+                                        suspect&rsquo;s gender and
+                                        race from the photograph, we can narrow the set of suspects in the Baltimore
+                                        arrest dataset. Further, we can
+                                        narrow it by the date range within a week of the Facebook post. Using this
+                                        methodology, there were multiple
+                                        arrests contained in the dataset for which we were able to identify the murder
+                                        suspect. With this, we also
+                                        become aware of some personal information about the victim(s) and details of the
+                                        victims. The social media
+                                        posts state the date and time of the crime, the location of the crime, the age
+                                        of the victim, and the
+                                        injuries of the victim.</span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span class="c0">Reidentifying suspects and victims of murders can have serious
+                                        repercussions. First,
+                                        every adult in the United States has the right to due process. This means that
+                                        suspects should be considered
+                                        innocent until proven guilty. By releasing murder arrests on social media, the
+                                        Police often strip suspects
+                                        of this right. Briefly looking at the comments section of the posts,
+                                        you&rsquo;ll see that the community
+                                        often writes hateful comments about the individuals under the assumption that
+                                        they are already guilty.
+                                        Posting to social media amplifies unequal treatment by allowing people to take
+                                        part in the conversation
+                                        regarding serious legal matters. What if the suspect is deemed innocent? Does
+                                        Baltimore post any type of
+                                        correction to the dataset and social media? If not, the suspect has incurred
+                                        unjust slander. Additionally,
+                                        the victims and their families could be reidentified based on the data. This
+                                        could cause unnecessary pain
+                                        and suffering to the families of the victims. The suspects, victims, and
+                                        victims&rsquo; family members did
+                                        not consent to their information being publicly disseminated to citizens.
+                                        Lastly, there are risks associated
+                                        with secondary use of this data. With victims identified, funeral homes and
+                                        attorneys could send targeted
+                                        advertisements to the families of the victims. Additionally, the media could
+                                        target the families and the
+                                        communities of the victim for interviews and comments. Similarly, attorneys and
+                                        the media could target the
+                                        reidentified murder suspects.</span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span class="c0">We suggest revisiting Nissenbaum&#39;s contextual integrity and
+                                        making some changes
+                                        to better align with the data definitions. Additionally, the Fair Information
+                                        Practice Principles
+                                        (&ldquo;FIPPs&rdquo;) are a set of guidelines to assist with privacy challenges
+                                        associated with Personally
+                                        Identifiable Information (&ldquo;PII&rdquo;). Per FIPPs, there should be
+                                        specific purpose specifications of
+                                        each of the datasets(The Fair Information). For the arrest dataset, the context
+                                        of the data seemingly
+                                        intends to allow the public to understand crime concentration in Baltimore by
+                                        types of crimes and
+                                        neighborhoods. In this context, the data could be aggregated and presented in a
+                                        dashboard. The dashboard
+                                        would be a user-friendly mechanism to share the information required for the
+                                        user&rsquo;s goals while
+                                        protecting the privacy of potential suspects.</span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span>Further, there should be more legal considerations around the rights of
+                                        suspects prior to
+                                        convictions. If a suspect is posted to social media and then found innocent,
+                                        they could have a difficult
+                                        time integrating back into society; they may be rejected by the community due to
+                                        biased views formed on the
+                                        back of the publicly released arrest data. In line with the FIPPs principle of
+                                        Data Quality and Integrity,
+                                        the Baltimore City Police Department should implement a mechanism to reflect
+                                        that a suspect was deemed
+                                        innocent. (The Fair Information)The related posts on social media should be
+                                        purged by the Police. Further,
+                                        the innocent suspect&rsquo;s image and personal information should be
+                                        disassociated from the arrest crimes.
+                                        Lastly, the Baltimore Police should consider including a column on the
+                                        historical arrest data indicating
+                                        whether the suspect was convicted of the crime(s) they were arrested for.</span>
+                        </p>
+                        <h2 class="c7" id="h.pf9sk3jsn1sm">Reidentifying minority group members
+                        </h2>
+                        <p class="c1"><span class="c0">We have already explored the risks of reidentification through
+                                        the various methods
+                                        discussed above. What we must also consider is how the release of these data
+                                        sets poses a risk to different
+                                        racial groups, especially minorities.</span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span class="c0">For example, people of Asian descent are present in so few
+                                        numbers in the data that
+                                        it poses a risk to their personal safety. Only 2% of Baltimore&rsquo;s
+                                        population is Asian according to 2020
+                                        census data (U.S. Census Bureau, 2020). With the rise in hate crimes against
+                                        people of Asian descent
+                                        throughout the United States, the re-identification possibilities with these
+                                        datasets could exacerbate an
+                                        already horrific situation that is unfolding in the country by informing
+                                        attackers, for example, of
+                                        locations or zip codes where Asian people have been arrested or been victims of
+                                        a crime. </span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span class="c0">Black men are the most prominent group in the arrest records, and
+                                        we were able to
+                                        deduce this because of the inclusion of the race column in the arrest records.
+                                        There is a tremendous risk of
+                                        racial profiling as a result of the overrepresentation of minority groups such
+                                        as Black men in the arrest
+                                        record data. This puts already marginalized communities at risk for further
+                                        trauma and can compromise the
+                                        safety of the community in its entirety&ndash;something that we have seen time
+                                        and time again with racial
+                                        profiling taking the lives of so many people of color, specifically Black
+                                        Americans. </span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span class="c0">Racial profiling has resulted in the over-policing of BIPOC
+                                        bodies and neighborhoods.
+                                        Because of the frankly inconceivable gravity of dangers the inclusion of race in
+                                        these datasets poses, we
+                                        encourage you to think about whether the utility of including this race in these
+                                        datasets outweighs the
+                                        risks it poses to the wellbeing and privacy of the individual members in these
+                                        communities. Furthermore, for
+                                        the protection of at-risk populations and minorities, as stressed above, we
+                                        strongly urge that social media
+                                        posts be purged as well. </span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span class="c0">Nissenbaum&#39;s framework for contextual integrity supports the
+                                        inclusion of data
+                                        only when there is a specific use for it. For the purposes that the government
+                                        of Baltimore has given for
+                                        this data being released, it is not immediately clear why race is included as a
+                                        column. If one goal of
+                                        making this data public is to improve transparency, then we recommend including
+                                        an explanation of why each
+                                        column in the data is included at such a low granularity in the first place.
+                                        Thus the government can either
+                                        be clear with its intention for including the column or move to remove it
+                                        altogether if there is no such
+                                        justifiable reason.</span></p>
+                        <h2 class="c7" id="h.tgk3cdj03fse">Due Diligence for all Datasets</h2>
+                        <p class="c1"><span>In order to prevent the release of personally identifiable data or any other
+                                        data that could put
+                                        the privacy or personal safety of any individual at risk, it is critical that
+                                        there be a standardized review
+                                        process and a code of conduct that audits each data set before its release. For
+                                        Open Baltimore specifically,
+                                        a review process will further their goal of accountability by granting agency to
+                                        the public to determine
+                                        what information is available to the world. For the data itself, this might
+                                        decrease its utility, but more
+                                        importantly, it will accomplish a higher level of privacy and protection for the
+                                        citizens of Baltimore
+                                        present in the data sets. For example, a deep dive into the arrest records data
+                                        via a review process may
+                                        have been able to reveal the privacy harms we identified in this document and
+                                        likely result in the race
+                                        column ultimately not being released with the data sets. </span><span
+                                        class="c0">Instead, the review could
+                                        have revealed that race information in aggregate could achieve the same goals or
+                                        transparency without
+                                        putting anyone at risk of identification.</span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span>Perturbing or sampling the data would also decrease the risk associated with
+                                        releasing sensitive
+                                        data sets such as the ones included in Open Baltimore. Perturbing would result
+                                        in the distribution of the
+                                        dataset being significantly different from the original dataset. This could help
+                                        level out uneven
+                                        distributions across different races, for example, and reduce the risk of racial
+                                        profiling (if the race
+                                        column is even included in the first place). </span><span class="c0">Wilson and
+                                        Rosen present simple
+                                        techniques of data perturbation that Baltimore could implement with minimal
+                                        effort (Wilson and Rosen
+                                        2003).</span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span>Each of the methods and mechanisms described above can be applied not only
+                                        to the Open Baltimore
+                                        data portal but to any publicly available dataset to decrease the risk of any
+                                        sort of harm coming to those
+                                        whose data is included in the data. </span></p>
+                        <h2 class="c7" id="h.yxzgpygxmlz6">Conclusion</h2>
+                        <p class="c1"><span class="c0">While we are concerned about the current state of the data
+                                        available in the Open
+                                        Baltimore dataset, we are optimistic that intentional changes and considerations
+                                        could reduce our privacy
+                                        concerns while still achieving the Police Department&rsquo;s goal of providing
+                                        citizens transparency. We
+                                        believe implementing data minimization principles and defining data use
+                                        specifications would greatly improve
+                                        citizens&rsquo; privacy risks. We appreciate your time and look forward to
+                                        hearing your feedback on this
+                                        topic.</span></p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <hr style="page-break-before:always;display:none;">
+                        <h2 class="c7 c17" id="h.ttkg7mgamify"></h2>
+                        <h2 class="c12" id="h.7vpx3inbo9eo">References</h2>
+                        <p class="c1"><span class="c0">JOHN DEWEY, LOGIC: THE THEORY OF INQUIRY 112 (Jo Ann Boydston
+                                        ed.</span></p>
+                        <p class="c1"><span class="c0">1991) (1938)</span></p>
+                        <p class="c1"><span class="c9">Open Baltimore</span><span class="c0">. (Baltimore City Police
+                                        Department).
+                                        Data.baltimorecity.gov. Retrieved March 31, 2022, from
+                                        https://data.baltimorecity.gov/</span></p>
+                        <p class="c18"><span>&zwnj;</span><span class="c19">Nissenbaum, Helen F. (2011). A Contextual
+                                        Approach to Privacy
+                                        Online. </span><span class="c9 c19">Daedalus</span><span class="c19">&nbsp;140:4
+                                        (Fall 2011), </span><span class="c11">32-48. </span><span class="c11 c22"><a
+                                                class="c6"
+                                                href="https://www.google.com/url?q=https://ssrn.com/abstract%3D2567042&amp;sa=D&amp;source=editors&amp;ust=1650492462425643&amp;usg=AOvVaw0KDe3nq-Nv_EQaAORRc24D">https://ssrn.com/abstract=2567042</a></span>
+                        </p>
+                        <p class="c18"><span class="c11">Solove, Daniel J. (2006). A Taxonomy of Privacy. </span><span
+                                        class="c11 c9">University of Pennsylvania Law Review,</span><span
+                                        class="c11">&nbsp;154:3 (January 2006), p.
+                                        477.</span><span class="c11"><a class="c6"
+                                                href="https://www.google.com/url?q=https://ssrn.com/abstract%3D667622&amp;sa=D&amp;source=editors&amp;ust=1650492462426098&amp;usg=AOvVaw0dxw98XV7ZhTO6ZhHgAEfs">&nbsp;</a></span><span
+                                        class="c5"><a class="c6"
+                                                href="https://www.google.com/url?q=https://ssrn.com/abstract%3D667622&amp;sa=D&amp;source=editors&amp;ust=1650492462426330&amp;usg=AOvVaw0B3d2wS7LT9kg_qccU-SOL">https://ssrn.com/abstract=667622</a></span>
+                        </p>
+                        <p class="c1"><span>U.S. Census Bureau (2020). American Community Survey 5-year estimates.
+                                        Retrieved from Census
+                                        Reporter Profile page for Baltimore, MD </span><span class="c5"><a class="c6"
+                                                href="https://www.google.com/url?q=http://censusreporter.org/profiles/16000US2404000-baltimore-md&amp;sa=D&amp;source=editors&amp;ust=1650492462426768&amp;usg=AOvVaw3rs1o43oYLF8ER6tRJPg0Q">http://censusreporter.org/profiles/16000US2404000-baltimore-md</a></span><span
+                                        class="c0">&nbsp;</span></p>
+                        <p class="c18"><span class="c11">US Department of Health and Human Services. (2021). What is the
+                                        Opioid Epidemic?
+                                        https://www.hhs.gov/opioids/about-the-epidemic/index.html</span></p>
+                        <p class="c1"><span>The Fair Information Practice Principles (FIPPs) In the Information Sharing
+                                        Environment (ISE).
+                                        (n.d.). Retrieved March 31, 2022, from </span><span class="c5"><a class="c6"
+                                                href="https://www.google.com/url?q=https://pspdata.blob.core.windows.net/webinarsandpodcasts/The_Fair_Information_Practice_Principles_in_the_Information_Sharing_Environment.pdf&amp;sa=D&amp;source=editors&amp;ust=1650492462427360&amp;usg=AOvVaw3lxeG4-2iDNnxOD165bxqL">https://pspdata.blob.core.windows.net/webinarsandpodcasts/The_Fair_Information_Practice_Principles_in_the_Information_Sharing_Environment.pdf</a></span>
+                        </p>
+                        <p class="c1 c3"><span class="c0"></span></p>
+                        <p class="c1"><span>Wilson, Rick &amp; Rosen, Peter. (2003). Protecting Data through
+                                        Perturbation Techniques: The
+                                        Impact on Knowledge Discovery in Databases. J. Database Manag.. 14. 14-26.
+                                        10.4018/978-1-59140-471-2.ch003.</span></p>
+                        <div>
+                                <p class="c3 c13"><span class="c0"></span></p>
+                                <p class="c13 c3"><span class="c0"></span></p>
+                                <p class="c3 c20"><span class="c0"></span></p>
+                        </div>
+                </main>
+        </div>
+
+        <footer>
+                <div class="footer-wrapper"></div>
+        </footer>
+</body>
+
+</html>
