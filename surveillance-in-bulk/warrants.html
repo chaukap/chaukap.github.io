@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Digital Warrants</title>
+        <link rel="canonical" href="https://www.chaukap.github.io/">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Chandler Haukap | Surveillance in Bulk">
+        <meta name="theme-color" content="#FD3519">
+        <meta name="generator" content="Hugo 0.54.0">
+
+        <link rel="stylesheet" href="style.css">
+
+        <meta property="og:title" content="Home">
+        <meta property="og:description" content="Chandler Haukap | Surveillance in Bulk">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.chaukap.github.io/">
+        <meta itemprop="name" content="Home">
+        <meta itemprop="description" content="Chandler Haukap | Surveillance in Bulk">
+</head>
+
+<body data-new-gr-c-s-check-loaded="8.896.0" data-gr-ext-installed="">
+        <header style="background-image:url('images/sidebar-image.jpg'); background-size: auto 100%;">
+                <div class="intro">
+                        <h2 class="main-title">Digital Warrants</h2>
+                        <h4>Chandler Haukap</h4>
+                        <div class="menu">
+                                <p>
+                                        <a href="github.com/chaukap/transparency_report_analysis" target="_blank"
+                                                rel="external">
+                                                Project's GitHub Page
+                                        </a>
+                                </p>
+                        </div>
+                </div>
+
+                <div class="socials">
+                        <a href="https://github.com/chaukap" class="social-link" target="_blank" rel="noopener">
+                                <div class="icon">
+                                        <svg width="35px" height="35px" viewBox="0 0 115 115"
+                                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+                                                <path
+                                                        d="M102.679 0H12.32C5.52 0 0 5.519 0 12.321v90.358C0 109.48 5.519 115 12.321 115h90.358c6.802 0 12.321-5.519 12.321-12.321V12.32C115 5.52 109.481 0 102.679 0zM71.182 98.494c-2.156.385-2.952-.95-2.952-2.053 0-1.386.051-8.471.051-14.195 0-4.005-1.335-6.546-2.9-7.881C74.878 73.313 84.89 72.003 84.89 55.6c0-4.671-1.669-7.007-4.39-10.01.436-1.105 1.9-5.648-.436-11.552-3.568-1.104-11.731 4.595-11.731 4.595-3.389-.95-7.06-1.438-10.679-1.438-3.62 0-7.29.488-10.679 1.438 0 0-8.163-5.699-11.73-4.595-2.337 5.878-.899 10.422-.437 11.551-2.72 3.004-4.004 5.34-4.004 10.011 0 16.326 9.574 17.712 19.072 18.765-1.232 1.104-2.336 3.003-2.72 5.724-2.44 1.104-8.677 3.004-12.4-3.568-2.335-4.056-6.545-4.39-6.545-4.39-4.159-.05-.282 2.619-.282 2.619 2.772 1.283 4.723 6.212 4.723 6.212 2.49 7.624 14.4 5.057 14.4 5.057 0 3.568.052 9.37.052 10.422 0 1.104-.77 2.438-2.952 2.053C27.21 92.821 15.35 76.701 15.35 57.86c0-23.564 18.02-41.456 41.585-41.456s42.663 17.892 42.663 41.456c.026 18.842-11.474 34.988-28.416 40.635zM46 82.81c-.488.103-.95-.102-1.001-.436-.051-.385.282-.719.77-.822.488-.05.95.154 1.001.488.077.334-.257.668-.77.77zm-2.439-.23c0 .333-.385.615-.898.615-.565.052-.95-.23-.95-.616 0-.333.385-.616.899-.616.487-.051.95.231.95.616zm-3.516-.283c-.103.334-.616.488-1.053.334-.488-.103-.821-.488-.719-.822.103-.334.617-.488 1.053-.385.513.154.847.54.719.873zm-3.158-1.386c-.23.282-.718.23-1.104-.154-.385-.334-.487-.822-.23-1.053.23-.282.718-.23 1.103.154.334.334.462.847.231 1.053zm-2.336-2.336c-.23.154-.667 0-.95-.385-.282-.385-.282-.822 0-1.001.283-.231.72-.052.95.333.283.385.283.847 0 1.053zm-1.668-2.49c-.231.23-.616.103-.899-.154-.282-.334-.333-.719-.102-.899.23-.23.616-.102.898.154.282.334.334.72.103.899zm-1.72-1.9c-.103.231-.436.283-.719.103-.334-.154-.488-.436-.385-.667.103-.154.385-.231.719-.103.334.18.488.462.385.667z">
+                                                </path>
+                                        </svg>
+                                </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/chandler-haukap" class="social-link" target="_blank"
+                                rel="noopener">
+                                <div class="icon">
+                                        <svg width="35px" height="35px" viewBox="0 0 115 115"
+                                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+                                                <path
+                                                        d="M106.786 0H8.189C3.67 0 0 3.722 0 8.291v98.418C0 111.278 3.67 115 8.189 115h98.597c4.518 0 8.214-3.722 8.214-8.291V8.29C115 3.722 111.304 0 106.786 0zm-72.03 98.571H17.713V43.69h17.07V98.57h-.025zm-8.522-62.377c-5.467 0-9.882-4.44-9.882-9.883 0-5.442 4.415-9.882 9.882-9.882 5.442 0 9.883 4.44 9.883 9.882a9.87 9.87 0 0 1-9.883 9.883zm72.414 62.377H81.604V71.875c0-6.366-.129-14.555-8.856-14.555-8.882 0-10.242 6.931-10.242 14.093V98.57H45.46V43.69h16.352v7.495h.23c2.285-4.312 7.855-8.856 16.147-8.856 17.25 0 20.458 11.372 20.458 26.158V98.57z">
+                                                </path>
+                                        </svg>
+                                </div>
+                        </a>
+
+                        <a href="https://chandler-haukap.medium.com" class="social-link" target="_blank" rel="noopener">
+                                <div class="icon">
+                                        <svg width="35px" height="35px" viewBox="0 0 115 115"
+                                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+
+                                                <path
+                                                        d="M0 0v115h115V0H0zm95.542 27.235l-6.16 5.905a1.81 1.81 0 0 0-.693 1.72v43.458c-.103.667.154 1.335.693 1.72l6.032 5.904v1.31h-30.29v-1.259l6.238-6.058c.616-.616.616-.795.616-1.72V43.074L54.625 87.123h-2.336l-20.202-44.05v29.52c-.18 1.233.257 2.49 1.13 3.39l8.111 9.83v1.31H18.277v-1.31l8.111-9.83a3.93 3.93 0 0 0 1.053-3.39v-34.14a2.93 2.93 0 0 0-.976-2.516l-7.213-8.702v-1.309h22.41l17.301 37.991 15.222-37.965h21.357v1.283z">
+                                                </path>
+
+                                        </svg>
+                                </div>
+                        </a>
+
+                        <a href="https://twitter.com/ChandlerHaukap" class="social-link" target="_blank" rel="noopener">
+                                <div class="icon">
+                                        <svg width="35px" height="35px" viewBox="0 0 115 115"
+                                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+
+                                                <path
+                                                        d="M102.679 0H12.32C5.52 0 0 5.519 0 12.321v90.358C0 109.48 5.519 115 12.321 115h90.358c6.802 0 12.321-5.519 12.321-12.321V12.32C115 5.52 109.481 0 102.679 0zM90.126 40.763c.051.72.051 1.464.051 2.182 0 22.256-16.942 47.9-47.9 47.9-9.548 0-18.404-2.772-25.848-7.547 1.36.154 2.67.205 4.055.205 7.881 0 15.12-2.67 20.895-7.187-7.392-.154-13.604-5.006-15.735-11.68 2.593.385 4.929.385 7.598-.308a16.837 16.837 0 0 1-13.476-16.531v-.205a16.824 16.824 0 0 0 7.598 2.13 16.8 16.8 0 0 1-7.496-14.016c0-3.131.822-6.006 2.285-8.496a47.803 47.803 0 0 0 34.705 17.61c-2.387-11.424 6.161-20.69 16.429-20.69 4.851 0 9.215 2.027 12.296 5.313a32.99 32.99 0 0 0 10.678-4.056 16.792 16.792 0 0 1-7.393 9.267c3.389-.36 6.674-1.31 9.703-2.618a35.437 35.437 0 0 1-8.445 8.727z">
+                                                </path>
+                                        </svg>
+                                </div>
+                        </a>
+
+                        <div class="photo-cred" style="font-size: small;">
+                                Photo by <a href="https://unsplash.com/@chrisyangchrisfilm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chris Yang</a> on <a href="https://unsplash.com/s/photos/spy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </div>
+                </div>
+        </header>
+
+        <div class="content-wrapper" style="background-image: linear-gradient(#d7ecec, #0ebbd5);">
+                <main id="content">
+                        <p class="c23 title" id="h.5sdjh4flw1b9"><span class="c22">Surveillance in Bulk</span></p>
+                        <p class="c28 subtitle" id="h.nnxlhrjze2lp"><span class="c25">Chandler Haukap</span></p>
+                        <h3 class="c13" id="h.66n206empfu5"><span class="c12">Abstract</span></h3>
+                        <p class="c0"><span class="c8">Every day our online footprints grow. We send emails, exchange direct messages, and
+                                store our documents in cloud servers that we will never see and never own. These effects that once existed
+                                on papers stored in filing cabinets in back offices are now highly available from anywhere in the world-
+                                from a cafe in Nepal to CIA headquarters in Virginia. With Google and Facebook holding the
+                                &ldquo;keys&rdquo; to our online filing cabinets we no longer have the agency to feel secure in our effects.
+                                Because the laws that govern our online privacy were written long before we understood the magnitude or
+                                usefulness of the internet, we have very few protections and therefore zero confidence that the government
+                                isn&rsquo;t surveilling every text and collecting every photo. In this paper, I explore the current privacy
+                                protections in place on the internet, describe government surveillance that evades privacy protection, and
+                                raise concerns about the escalation of government surveillance. I conclude by suggesting an alternative
+                                paradigm that restores the confidence of United States citizens that their fourth amendment rights still
+                                exist in the age of information.</span></p>
+                        <h2 class="c15" id="h.28130dqqgvox"><span class="c7">Overview</span></h2>
+                        <p class="c0"><span class="c8">This work is divided into four sections. In the first section, I describe the legal
+                                mechanisms that allow the government to surveil information stored by private companies. My intent is to
+                                highlight the grey areas of the law that these mechanisms inhabit. The second section presents aggregated
+                                data from the transparency reports of some of the tech giants. The data in these transparency reports
+                                establish the magnitude of the problem. Next, I provide concrete examples of how surveillance harms
+                                individuals via misinterpretation of the data and harms the economy by throttling our ability to export our
+                                technology. Finally, I present a panel of solutions, ranging from legal changes that could put the United
+                                States on track for a more equitable internet.</span></p>
+                        <h2 class="c15" id="h.53es22dbjb9b"><span class="c7">Search Warrants</span></h2>
+                        <p class="c0"><span>The Fourth Amendment of the United States Constitution describes the process that a law
+                                enforcement officer must follow in order to search or seize private property. It was drafted in response to
+                                King George&rsquo;s &ldquo;writs of assistance&rdquo; which allowed the king&rsquo;s agents to rifle through
+                                colonists&rsquo; belongings until they found something incriminating (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.eff.org/document/how-founding-fathers-fought-18th-century-version-presidents-illegal-domestic-spying&amp;sa=D&amp;source=editors&amp;ust=1650557133752755&amp;usg=AOvVaw3invFPjy0P-8_uGWLRMwBw">Snyder
+                                    2007</a></span><span class="c8">).</span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span class="c8">To obtain a warrant, a law enforcement officer must convince a judge that their
+                                search would meet three requirements: 1. Probable cause, supported by oath or affirmation. This requires
+                                that the officer have a reason to suspect that a crime is being committed. This prevents &ldquo;fishing
+                                expeditions&rdquo; where law enforcement searches indiscriminately until they find a crime. 2. A description
+                                of the place to be searched. Law enforcement must be clear about the scope of their search. This prevents
+                                officers from violating the privacy of entire neighborhoods. 3. The persons or things to be seized. It is
+                                insufficient to claim that a crime is being committed without understanding what that crime is and who is
+                                committing it. Simply looking &ldquo;suspicious&rdquo; does not give law enforcement a right to
+                                search.</span></p>
+                        <h2 class="c15" id="h.mot3ex8mbsub"><span class="c7">Fourth Amendment in Practice</span></h2>
+                        <p class="c0"><span>Prior to the information age, the application of the fourth amendment was fairly
+                                straightforward. In determining if the fourth amendment applied a judge need only determine if the
+                                government was trespassing on private property (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://deliverypdf.ssrn.com/delivery.php?ID%3D405072103003094088080083083094127098018009066012037092123121113089029083073113105108110101057026123124054118029100125015103100058005037041060014002019103075095101027042010007108117115094095030017093117115015015110023086069092000015022119088026003017%26EXT%3Dpdf%26INDEX%3DTRUE&amp;sa=D&amp;source=editors&amp;ust=1650557133753899&amp;usg=AOvVaw1gIGECSrEuaERATS8SxVyW">Tokson
+                                    2009</a></span><span class="c8">). When telephones were first invented they were considered communal,
+                                not personal, devices which explains the Supreme Court&rsquo;s 1924 ruling that telephone calls were not
+                                protected by the fourth amendment (Olmstead v. United States 1928).</span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span>In 1976 </span><span class="c17">United States v. Miller </span><span>gave rise to the Third
+                                Party Doctrine. This doctrine offered fourth amendment protection exclusively to information that is not
+                                disclosed to a third party (United States v. Miller 1976) thereby stripping fourth amendment protection from
+                                phone records and, until recently, cell phone location data (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.law.georgetown.edu/american-criminal-law-review/aclr-online/volume-56/alexa-can-you-keep-a-secret-the-third-party-doctrine-in-the-age-of-the-smart-home/&amp;sa=D&amp;source=editors&amp;ust=1650557133755050&amp;usg=AOvVaw0jMqmYnrN0ng4vYWGMgjPG">Manning
+                                    2019</a></span><span class="c8">).</span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span class="c8">The Third-Party Doctrine reigned until 2018 when cell phone geolocation was extended
+                                fourth amendment protection by the adoption of the Innescapability Doctrine (United States v. Carpenter
+                                2018). &ldquo;Innescapability&rdquo; in this sense implies that cell phones are inescapable in the modern
+                                age and therefore deserve additional protections not normally ascribed to third-party information. However,
+                                the Third-Party Doctrine still applies to many pieces of sensitive information which I&rsquo;ll describe
+                                below. </span></p>
+                        <h3 class="c13" id="h.shwq7fnrhktw"><span class="c12">Geofenced Warrants</span></h3>
+                        <p class="c0"><span>With 2.9 million downloads in 2021, Google Maps has become the de facto source of navigation
+                                information in the United States (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.statista.com/statistics/865413/most-popular-us-mapping-apps-ranked-by-audience/&amp;sa=D&amp;source=editors&amp;ust=1650557133756031&amp;usg=AOvVaw06zQx_nNPtBBxGlIN5szQc">Statista
+                                    2022</a></span><span>). Google maps, and other navigation apps, contain volumes of location information
+                                on the majority of Americans. This information has not gone untapped by the United States government.
+                                Geofenced warrants are warrants issued to a tech company commanding that they disclose identifying
+                                information about every device that was present at a given location at a given point in time. Police then
+                                comb through this information to identify individuals that they think might have committed a crime and
+                                target them with further investigations (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://harvardlawreview.org/2021/05/geofence-warrants-and-the-fourth-amendment/&amp;sa=D&amp;source=editors&amp;ust=1650557133756416&amp;usg=AOvVaw2O9z70BowptsveIIts2TJN">Harvard
+                                    2021</a></span><span class="c8">).</span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span>The grey area that these warrants occupy is the specification of persons or things to be seized.
+                                Simply being in the public sphere is not probable cause to be searched. In fact, a 2021 ruling denying a
+                                geofenced warrant cited a Supreme Court case where police with a warrant to search a bar and bartenders
+                                illegally searched a patron of the bar (</span><span class="c11">Ybarra v. Illinois 1979) arguing that
+                                because geofenced warrants do not specify the persons to be searched, are not admissible in
+                                court</span><span>&nbsp;(</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.eff.org/deeplinks/2020/08/new-federal-court-rulings-find-geofence-warrants-unconstitutional-0&amp;sa=D&amp;source=editors&amp;ust=1650557133756961&amp;usg=AOvVaw2GDn0I8YKYbaKi-3DJplvz">Lynch
+                                    and Sobel 2021</a></span><span class="c8">). </span></p>
+                        <h3 class="c13" id="h.4l5e86lab9ll"><span class="c12">Keyword Warrants</span></h3>
+                        <p class="c0"><span>Google.com, the world&#39;s most popular search site, was visited 91 billion times in December
+                                2021 alone (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.similarweb.com/website/google.com/%23overview&amp;sa=D&amp;source=editors&amp;ust=1650557133757482&amp;usg=AOvVaw04qLFe2sgVNxsNbbXUUORg">Similarweb
+                                    2022</a></span><span>). Law enforcement has recently cast its gaze on this wealth of data in the form of
+                                keyword warrants. These warrants demand companies supply the names of everyone that searched for a
+                                particular keyword at a particular time (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.forbes.com/sites/thomasbrewster/2021/10/04/google-keyword-warrants-give-us-government-data-on-search-users/?sh%3D32ab50bc7c97&amp;sa=D&amp;source=editors&amp;ust=1650557133757900&amp;usg=AOvVaw2up3748XeTtMkuKkrUVqtG">Brewser
+                                    2021</a></span><span>). They have been issued since at least 2017 (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.theguardian.com/us-news/2021/sep/16/geofence-warrants-reverse-search-warrants-police-google&amp;sa=D&amp;source=editors&amp;ust=1650557133758297&amp;usg=AOvVaw3GcLeZEBKXeszlmQBR79Ai">Bhuiyan
+                                    2021</a></span><span>) and received by tech giants including Google, Microsoft, and Yahoo (</span><span
+                                class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://techcrunch.com/2022/01/13/new-york-geofence-keyword-search-warrants-bill/&amp;sa=D&amp;source=editors&amp;ust=1650557133758582&amp;usg=AOvVaw1u79h9HYmGaenmGjjj18zN">Whitaker
+                                    2022</a></span><span class="c8">).</span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span class="c8">This type of warrant occupies a grey area between criminal intent and freedom of the
+                                press. The first amendment protects our right to obtain information, even if the government finds the
+                                information unsavory.</span></p>
+                        <h3 class="c13" id="h.n55es99d7fix"><span class="c12">Genealogical Warrants</span></h3>
+                        <p class="c0"><span>Even before human biology could be submitted to databases, the issues surrounding the privacy of
+                                our DNA have been hotly debated (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.nature.com/articles/d41586-020-02494-z&amp;sa=D&amp;source=editors&amp;ust=1650557133759259&amp;usg=AOvVaw1dib-aF3A3mAja-TtbS4ze">Nature
+                                    2020</a></span><span>). With the rise of DNA profiling sites like 23&amp;Me and Ancestry.com the
+                                government has identified a new method of surveillance: genealogical warrants. The process law enforcement
+                                uses is to take a DNA sample from a crime scene, upload it to a DNA testing site, and see if there are any
+                                close relatives. Then, they interview the close relatives to see if they have any idea which member of their
+                                family the DNA belongs to (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.latimes.com/california/story/2020-12-08/man-in-the-window&amp;sa=D&amp;source=editors&amp;ust=1650557133759618&amp;usg=AOvVaw2nRLNqfJJnJ4gOMNKWvEQP">St.
+                                    John 2020</a></span><span class="c8">).</span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span>This warrant blurs the line between public and private information. One service that many people
+                            </span><span class="c17">want</span><span class="c8">&nbsp;from DNA testing sites is the ability to locate
+                                relatives. The intent of these users is to connect with relatives, not incriminate them. </span></p>
+                        <h3 class="c13" id="h.9nbcnajva4eo"><span>FISA Warrants</span></h3>
+                        <p class="c0"><span>The Foreign Intelligence Surveillance Act of 1978 established a separate court to approve
+                                warrants issued by federal agents (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://bja.ojp.gov/program/it/privacy-civil-liberties/authorities/statutes/1286&amp;sa=D&amp;source=editors&amp;ust=1650557133760434&amp;usg=AOvVaw2I5vpy_LGhggJTw0Tpqqag">BJA
+                                    2022</a></span><span>). The court is </span><span class="c17">ex parte</span><span>, meaning that the
+                                only parties present at the hearings are the judge and the government agents (ibid.). 11 Judges are
+                                appointed to serve in the FISA court (FISC) by the chief justice of the supreme court and these judges serve
+                                on a rolling basis (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.fisc.uscourts.gov/about-foreign-intelligence-surveillance-court&amp;sa=D&amp;source=editors&amp;ust=1650557133760856&amp;usg=AOvVaw2NHPD8JZuSMXMl01POV0CW">FISC
+                                    2022</a></span><span>). The FISC approves over 99% of final warrant requests (</span><span class="c5"><a
+                                    class="c4"
+                                    href="https://www.google.com/url?q=https://www.leahy.senate.gov/imo/media/doc/Honorable%2520Patrick%2520J%2520Leahy.pdf&amp;sa=D&amp;source=editors&amp;ust=1650557133761204&amp;usg=AOvVaw1XH6YaOJ-GO1ezh-edHsFX">Walton
+                                    2013</a></span><span class="c8">). </span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span>Both foreign and domestic individuals can be targeted by FISA warrants (</span><span
+                                class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.npr.org/2019/12/22/790281142/scathing-report-puts-secret-fisa-court-into-the-spotlight-will-congress-act&amp;sa=D&amp;source=editors&amp;ust=1650557133761773&amp;usg=AOvVaw0BeD-UFCMZn5tZSeaXzmLl">Lucas
+                                    2019</a></span><span class="c8">). FISA warrants do not have to pertain to an ongoing criminal
+                                investigation. Instead, they only need to pertain to an ongoing national security investigation (BJA 2022),
+                                which implies that the information gathered might not ever be presented to an opposing attorney. This
+                                condition, coupled with the fact that most FISA warrants are issued with orders gagging the companies that
+                                receive them from disclosing to the subjects of the warrants that the government is surveilling them,
+                                results in a system that heavily favors federal surveillance over individual privacy.</span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span>In terms of fourth amendment rights, FISA warrants redefine probable cause. In a traditional
+                                warrant, the intent of the information collection is to ultimately present the information to a public
+                                court. Without the intent to pursue criminal prosecution the issuer of FISA warrants severely undermine the
+                                probable cause clause.</span></p>
+                        <h2 class="c15" id="h.cibugckhioy1"><span class="c7">The rise of government surveillance</span></h2>
+                        <p class="c0"><span class="c8">Owing to the gag orders placed on companies we do not have complete visibility into
+                                government surveillance activity. Luckily, many large companies do publish transparency reports that include
+                                government requests. These reports generally contain the same information, but owing to the lack of
+                                standardization they vary in their degree of granularity. Some sites like Google report the number of search
+                                warrants, subpoenas, and emergency requests as well as the number of requests they successfully block. Other
+                                sites like Apple seem to combine warrants and administrative subpoenas. </span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span class="c8">I&rsquo;ve spent some time aggregating intersite statistics. Google&rsquo;s and
+                                Facebook&rsquo;s reports are particularly robust and shed some light on the increase in surveillance. Below
+                                are the number of requests submitted to Google and Facebook over the last few years.</span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span
+                                style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 268.00px;"><img
+                                    alt="" src="images/image2.png"
+                                    style="width: 624.00px; height: 268.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                                    title=""></span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span class="c8">However, not all requests are created equal. Many request more than one
+                                account.</span></p>
+                        <h2 class="c15" id="h.ijoobg9unhf9"><span
+                                style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 268.00px;"><img
+                                    alt="" src="images/image1.png"
+                                    style="width: 624.00px; height: 268.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                                    title=""></span></h2>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span class="c8">By dividing the number of warrants by the number of accounts specified in those
+                                warrants we can see that at both Facebook and Google any given warrant is expected to demand more than one
+                                account.</span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span>You can view my data sources and code for generating these figures on my </span><span
+                                class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://github.com/chaukap/transparency_report_analysis&amp;sa=D&amp;source=editors&amp;ust=1650557133764276&amp;usg=AOvVaw1642YPdm7-75RLETRCsudK">GitHub
+                                    page</a></span><span class="c8">.</span></p>
+                        <h2 class="c15" id="h.mva4c1hcvttq"><span class="c7">Why this is a problem</span></h2>
+                        <p class="c0"><span class="c8">Below I present examples of government surveillance failing to protect our interests.
+                                This is not an exhaustive list, but it serves to exemplify the dangers of allowing surveillance to go
+                                unchallenged.</span></p>
+                        <h3 class="c13" id="h.svxorjdj8mj1"><span class="c12">Wrong place, wrong time</span></h3>
+                        <p class="c0"><span>At their best, geofenced warrants have allowed law enforcement to prosecute those individuals
+                                that breached the capital during the January 6, 2021 riots (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.wired.com/story/capitol-riot-google-geofence-warrant/&amp;sa=D&amp;source=editors&amp;ust=1650557133765376&amp;usg=AOvVaw2cHmyNqFJpfe5vwm5qj-IZ">Harris
+                                    2021</a></span><span class="c8">). At their worst, they have jailed innocent people simply for being in
+                                the wrong place at the wrong time.</span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span>In 2020 Jorge Molina was arrested on suspicion of murder based on cell phone data that placed
+                                him near the scene of a murder (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://harvardlawreview.org/2021/05/geofence-warrants-and-the-fourth-amendment/&amp;sa=D&amp;source=editors&amp;ust=1650557133765969&amp;usg=AOvVaw1mpuPNPG1I3rbd1TTrzrak">Harvard
+                                    Law Review 2021</a></span><span class="c8">). Police identified him as the suspect to local media and
+                                placed him in jail for six days, during which time Molina lost his job. Molina was released only after
+                                several people provided alibis, and further cell phone data revealed that the location information was
+                                incorrect (Id.). Cases like Molina reveal the fallibility of location information. No one should be placed
+                                in jail for simply walking by a crime.</span></p>
+                        <h3 class="c13" id="h.e0e5xy578409"><span class="c12">DNA&rsquo;s uncertainty</span></h3>
+                        <p class="c0"><span>Because DNA is unique to an individual, most courts view it as damming evidence (</span><span
+                                class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.themarshallproject.org/2018/04/19/framed-for-murder-by-his-own-dna&amp;sa=D&amp;source=editors&amp;ust=1650557133766570&amp;usg=AOvVaw1dFVngfevvOI2ucWM028CW">Worth
+                                    2018</a></span><span>). However, we drastically underestimate the amount of DNA we leave behind
+                                everywhere we visit. The average person sheds enough skin cells to cover a football field every 2 minutes,
+                                and we shed anywhere from 40 to 100 hairs a day (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.aclu.org/news/privacy-technology/police-need-a-warrant-to-collect-dna-we-inevitably-leave-behind/&amp;sa=D&amp;source=editors&amp;ust=1650557133767025&amp;usg=AOvVaw3t2LJqUdK7V7WJACzDfsTk">Ramirez
+                                    2020</a></span><span class="c8">). How many times have you found a hair on yourself that did not belong
+                                to you?</span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span>A 2014 study tested the spread of DNA by asking a panel of participants to drink juice together.
+                                The researchers placed a single jug of juice between four participants and asked the participants to pour
+                                their own glasses. At the end of the session, the researchers swabbed the glasses for DNA. Not only did they
+                                identify the DNA of the individual using the glass, but they found that 33% of the participants&#39; DNA
+                                were on glasses that they had never even touched (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://pubmed.ncbi.nlm.nih.gov/25454534/&amp;sa=D&amp;source=editors&amp;ust=1650557133767678&amp;usg=AOvVaw3pMHFUpkZSFWKvwbA4x6Pc">Goray
+                                    and Oorschot 2014</a></span><span class="c8">). This means that DNA can be transferred from a person
+                                onto an object, then from the object onto another person, then from that person to another object. </span>
+                        </p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span>This exact scenario occurred in 2018 when Lukis Anderson was charged with murder. The only
+                                evidence against him was his DNA found on the victim. He was charged, despite hospital records proving that
+                                he was admitted for alcohol poisoning 45 minutes before the murder even took place (Worth 2018). Thanks to
+                                the work of a public defender Anderson was released. However, our blind faith in DNA evidence, coupled with
+                                the issuance of warrants to genealogy sites, could lead to the loss of freedom for countless innocent
+                                people.</span></p>
+                        <h3 class="c13" id="h.sipmldhwefob"><span class="c12">The loss of a lucrative market</span></h3>
+                        <p class="c0"><span>The executive branch&rsquo;s overreach into the privacy of individuals is not only concerning to
+                                United States citizens. In recent years the European Union has begun taking actions to prevent its
+                                citizen&#39;s data from being transferred to the United States. For example, in a 2015 court case, the
+                                EU&rsquo;s highest court ruled that the United State&rsquo;s surveillance program &ldquo;compromises the
+                                essence of the fundamental right to effective judicial protection, the existence of such a possibility being
+                                inherent in the existence of the rule of law.&rdquo; (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.eff.org/deeplinks/2015/10/europes-court-justice-nsa-surveilance&amp;sa=D&amp;source=editors&amp;ust=1650557133768646&amp;usg=AOvVaw0OWqSrgV2_qF_Zcj2PJ34Z">O&rsquo;Brien
+                                    2015</a></span><span class="c8">). The court again ruled against data flow from the EU and the US in
+                                2020, citing the fact that the FISA act does not provide any protections for foreign citizens (O&rsquo;Brien
+                                2020).</span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span>While these rulings guide companies to keep European data in European nations, there is still
+                                the question of whether the US can demand that US companies with data stored in the EU disclose this
+                                information to the US government. Specifically, a German court interested in this question made an inquiry
+                                in 2021 to Texas Law professor Prof. Stephen I. Vladeck who informed them that neither the FISA act nor any
+                                other surveillance legislation protects companies from government requests when the data is not located
+                                within the United States (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.datenschutzkonferenz-online.de/media/weitere_dokumente/Vladek_Rechtsgutachten_DSK_en.pdf&amp;sa=D&amp;source=editors&amp;ust=1650557133769429&amp;usg=AOvVaw0iBSiUB6MBCHpJAy4kj4wi">Vladeck
+                                    2021</a></span><span class="c8">). This effectively means that US security agencies do not have to
+                                respect national borders.</span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span class="c8">Caitlin Fennessy of the International Association of Privacy Professionals (IAPP)
+                                identifies three potential consequences of this fracture between the EU and the US:</span></p>
+                        <ol class="c27 lst-kix_3jxra0rt12q2-0 start" start="1">
+                            <li class="c14 li-bullet-0"><span class="c8">Other data protection agencies take a similar approach in the
+                                    immediate term.</span></li>
+                            <li class="c14 li-bullet-0"><span class="c8">EU businesses back away from U.S. firms due to perceived
+                                    enforcement risk.</span></li>
+                            <li class="c14 li-bullet-0"><span class="c8">U.S. firms themselves localize services or exit the EU
+                                    market.</span></li>
+                        </ol>
+                        <p class="c21"><span>(</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://iapp.org/news/a/the-austrian-google-analytics-decision-the-race-is-on/&amp;sa=D&amp;source=editors&amp;ust=1650557133770740&amp;usg=AOvVaw20fKjpCPVG3MTjxSJkJECP">Fennessy
+                                    2022</a></span><span class="c8">)</span></p>
+                        <p class="c0"><span>The effects of both 2 and 3 would be disastrous for the US economy. Cross-border data flows
+                                between the United States and EU are among the highest in the world, valued at over $264 billion in 2020,
+                                with the United States boasting a $22 billion dollar surplus in digital financial services (</span><span
+                                class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://sgp.fas.org/crs/misc/R44565.pdf&amp;sa=D&amp;source=editors&amp;ust=1650557133771386&amp;usg=AOvVaw1mYJbA-p_x_KKijUKPxu2G">Congressional
+                                    Research Service 2021</a></span><span class="c8">). If the IAPP is correct in its analysis this trade
+                                surplus could dry up. </span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span class="c8">Europe&rsquo;s rejection of American surveillance practices adds economic
+                                consequences to a practice that already violates human rights.</span></p>
+                        <h2 class="c15" id="h.3cawayg4xs08"><span class="c7">Touching on Beneficence</span></h2>
+                        <p class="c0"><span>There are truly despicable crimes committed online. Every day children are exploited online
+                                (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.enkanter.com/article/9-most-common-computer-and-internet-cyber-crimes&amp;sa=D&amp;source=editors&amp;ust=1650557133772520&amp;usg=AOvVaw1VHUKnqN5UPeavgkwMvl_f">Child
+                                    Advocacy Center 2022</a></span><span>) and I suspect that public opinion would favor the perpetrators of
+                                these crimes being monitored and prosecuted with the full might of the FBI. The debate is not, and should
+                                not, center on the government&rsquo;s ability to monitor online activity. To quote Justice Brandeis in his
+                                dissenting opinion on </span><span class="c17">Olmstead v United States</span><span class="c8">,
+                                &ldquo;Experience teaches us to be most on our guard to protect liberty when the government&#39;s purposes
+                                are beneficent&rdquo;.</span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span>Instead, the debate must center around </span><span class="c17">how much</span><span
+                                class="c8">&nbsp;collateral damage is acceptable in our quest for justice. As I&rsquo;ve described, our
+                                current trajectory will inevitably result in innocent people like Jorge Molina being jailed. It will also
+                                severely cripple the data flow between the US and the EU which has economic consequences on both
+                                continents.</span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span>The Belmont Report sums up the problem as such: </span><span class="c20">&ldquo;the different
+                                claims covered by the principle of beneficence may come into conflict and force difficult choice&rdquo;. We
+                                are now presented with such a choice. Below, I will present solutions in the court and in popular opinion
+                                that attempt to mitigate harm.</span></p>
+                        <h2 class="c15" id="h.o5oh5eu8fw4p"><span class="c7">Solutions</span></h2>
+                        <h3 class="c13" id="h.i9mnml9cw25b"><span class="c12">Informing the Courts</span></h3>
+                        <p class="c0"><span class="c8">Utah Law profession Matthew Tokson offers five alternatives to the inescapability
+                                clause that would better equip courts to rule on fourth amendment protections for online data. Of these five
+                                solutions, I&rsquo;ve identified two that are not only legally sound but also robust from a data science
+                                perspective. </span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span class="c26">The Normative Approach</span></p>
+                        <p class="c0"><span>The normative approach asks judges to extend fourth amendment protection to information that an
+                                individual </span><span class="c17">should</span><span class="c8">&nbsp;feel secure in. This approach would
+                                ask judges to build a body of precedence independent from societal expectations of privacy. Tokson offers
+                                this alternative as a solution that would adapt well to new technology by encouraging judges to think
+                                critically about every new method of information surveillance. </span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span>As a data scientist, I find this approach appealing because it removed societal expectations
+                                from the equation. Even among the data-native generation, only 43% believe that they are data literate
+                                (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.techrepublic.com/article/data-literacy-gap-among-young-people-could-impact-businesses/&amp;sa=D&amp;source=editors&amp;ust=1650557133775208&amp;usg=AOvVaw0Y0b2Op7_9IQ3lshBI5cLi">Vigliarolo
+                                    2021</a></span><span class="c8">), and asking societal expectations of privacy to drive the debate would
+                                mean that data privacy always lags behind new innovations. A normative approach coupled with amicus briefs
+                                by technologists would better prepare judges to handle surveillance cases than our current
+                                frameworks.</span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span class="c24">The Positive Law Regime</span></p>
+                        <p class="c0"><span class="c8">While the normative approach is an acceptable framework, I advocate most strongly for
+                                the positive law approach. Positive law would extend fourth amendment protection to all information that
+                                would be &ldquo;illegal or tortious&rdquo; for a private citizen to obtain. For example, I expect that my
+                                geolocation data cannot be accessed by my neighbor. Therefore, it should be protected by the fourth
+                                amendment.</span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span>I find this simple to implement and easily adaptable from both a legal perspective and a data
+                                science perspective. A judge would not even need to necessarily understand the technology at hand. They
+                                could simply ask the company holding the information if they would yield it up to a non-government agent
+                                willingly, and extend fourth amendment protections if the answer is &ldquo;no&rdquo;.</span></p>
+                        <h3 class="c13" id="h.5rakvf8svh3q"><span class="c12">Establishing a Dialog</span></h3>
+                        <p class="c0"><span>Whether we choose to adopt the normative approach, the positive law regime, or some other
+                                framework, we cannot hope to reign in government surveillance without allowing pluralism in the discourse.
+                                990 FISA warrants with gag orders were issued in 2019 (</span><span class="c5"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.uscourts.gov/sites/default/files/fisc_annual_report_2019_0.pdf&amp;sa=D&amp;source=editors&amp;ust=1650557133776932&amp;usg=AOvVaw0oGFi-kfXEwLu18aVG22K3">Duff
+                                    2019</a></span><span class="c8">). In order to remove the gag order, a recipient must pursue litigation
+                                against the gag order. For free speech advocates like the ACLU, this means potentially submitting 990
+                                individual requests. With well over 90% of all FISA warrants kept secret by the FBI, how can we hope to have
+                                a democratic debate about their merits? </span></p>
+                        <p class="c0 c10"><span class="c8"></span></p>
+                        <p class="c0"><span>The solution lies in opening up the FISA courts. In 2015 free speech advocates won a small
+                                victory by permitting amici curiae to counsel FISA judges. While this is a step away from autocracy, it
+                                cannot qualify as a step toward democracy. We cannot hope to truly identify equitable solutions to
+                                government surveillance without exposing FISA rulings to the scrutiny of democracy.</span>
+                            <hr style="page-break-before:always;display:none;">
+                        </p>
+                        <p class="c1"><span class="c8"></span></p>
+                        <h2 class="c19" id="h.h0p2sxu09cfm"><span class="c7">References</span></h2>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Snyder. (2007, July 3). </span><span class="c6">How the Founding Fathers Fought an
+                                18th Century Version of the</span><span class="c9">. Electronic Frontier Foundation. Retrieved April 18,
+                                2022, from </span><span class="c5 c9"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.eff.org/files/2015/07/02/generalwarrantsmemo.pdf&amp;sa=D&amp;source=editors&amp;ust=1650557133778376&amp;usg=AOvVaw0kevxv9cXZlu6E478z1cQD">https://www.eff.org/files/2015/07/02/generalwarrantsmemo.pdf</a></span>
+                        </p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Tokson, Matthew J., Automation and the Fourth Amendment (September 10, 2009). Iowa
+                                Law Review, Vol. 96, p. 581, 2011, Available at SSRN:</span><span class="c9"><a class="c4"
+                                    href="https://www.google.com/url?q=https://ssrn.com/abstract%3D1471517&amp;sa=D&amp;source=editors&amp;ust=1650557133779001&amp;usg=AOvVaw06QQ_3UM3NJxFPl0JQeuxF">&nbsp;</a></span><span
+                                class="c5 c9"><a class="c4"
+                                    href="https://www.google.com/url?q=https://ssrn.com/abstract%3D1471517&amp;sa=D&amp;source=editors&amp;ust=1650557133779295&amp;usg=AOvVaw2KBG-b1Im3rHZ4Zt8RVbrV">https://ssrn.com/abstract=1471517</a></span><span
+                                class="c2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </span></p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Manning, G. (2019, December 12). </span><span class="c6">Alexa: Can You Keep a
+                                Secret? The Third-Party Doctrine in the Age of the Smart Home</span><span class="c9">. Georgetown Law.
+                                Retrieved April 18, 2022, from </span><span class="c5 c9"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.law.georgetown.edu/american-criminal-law-review/aclr-online/volume-56/alexa-can-you-keep-a-secret-the-third-party-doctrine-in-the-age-of-the-smart-home/&amp;sa=D&amp;source=editors&amp;ust=1650557133780050&amp;usg=AOvVaw0MOtj-UkRf2vqKooGnHEld">https://www.law.georgetown.edu/american-criminal-law-review/aclr-online/volume-56/alexa-can-you-keep-a-secret-the-third-party-doctrine-in-the-age-of-the-smart-home/</a></span>
+                        </p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Harvard. (2021, May 10). </span><span class="c6">Geofence Warrants and the Fourth
+                                Amendment</span><span class="c2">. Harvard Law Review. Retrieved April 18, 2022, from
+                                https://harvardlawreview.org/2021/05/geofence-warrants-and-the-fourth-amendment/</span></p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Statista. (2022, February 14). </span><span class="c6">Most popular mapping apps in
+                                the U.S. 2021, by downloads</span><span class="c2">. Retrieved April 18, 2022, from
+                                https://www.statista.com/statistics/865413/most-popular-us-mapping-apps-ranked-by-audience/</span></p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Sobel, N., &amp; Lynch, J. (2021, December 14). </span><span class="c6">New Federal
+                                Court Rulings Find Geofence Warrants Unconstitutional</span><span class="c2">. Electronic Frontier
+                                Foundation. Retrieved April 18, 2022, from
+                                https://www.eff.org/deeplinks/2020/08/new-federal-court-rulings-find-geofence-warrants-unconstitutional-0</span>
+                        </p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Similarweb. (2022, February). </span><span class="c6">google.com Traffic Analytics
+                                &amp; Market Share</span><span class="c9">. Retrieved April 18, 2022, from </span><span class="c5 c9"><a
+                                    class="c4"
+                                    href="https://www.google.com/url?q=https://www.similarweb.com/website/google.com/%23overview&amp;sa=D&amp;source=editors&amp;ust=1650557133781417&amp;usg=AOvVaw1XPa6kpMy2qyIhvHE2vsCj">https://www.similarweb.com/website/google.com/#overview</a></span>
+                        </p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Brewster, T. (2021, October 17). </span><span class="c6">Exclusive: Government
+                                Secretly Orders Google To Identify Anyone Who Searched A Sexual Assault Victim&rsquo;s Name, Address Or
+                                Telephone Number</span><span class="c2">. Forbes. Retrieved April 18, 2022, from
+                                https://www.forbes.com/sites/thomasbrewster/2021/10/04/google-keyword-warrants-give-us-government-data-on-search-users/?sh=32ab50bc7c97</span>
+                        </p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Bhuiyan, J. (2021, September 17). </span><span class="c6">The new warrant: how US
+                                police mine Google for your location and search history</span><span class="c2">. The Guardian. Retrieved
+                                April 18, 2022, from
+                                https://www.theguardian.com/us-news/2021/sep/16/geofence-warrants-reverse-search-warrants-police-google</span>
+                        </p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Whittaker, Z. (2022, January 13). </span><span class="c6">A bill to ban geofence
+                                warrants in New York gains traction</span><span class="c9">. TechCrunch. Retrieved April 18, 2022, from
+                            </span><span class="c5 c9"><a class="c4"
+                                    href="https://www.google.com/url?q=https://techcrunch.com/2022/01/13/new-york-geofence-keyword-search-warrants-bill/&amp;sa=D&amp;source=editors&amp;ust=1650557133782560&amp;usg=AOvVaw3Zjjsj28W8JnZhLFnrunTq">https://techcrunch.com/2022/01/13/new-york-geofence-keyword-search-warrants-bill/</a></span>
+                        </p>
+                        <p class="c1 c16"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Nature Editorial. (2020, September 1). </span><span class="c6">Henrietta Lacks:
+                                science must right a historical wrong</span><span class="c9">. Nature. Retrieved April 18, 2022, from
+                            </span><span class="c5 c9"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.nature.com/articles/d41586-020-02494-z?error%3Dcookies_not_supported%26code%3D21081e62-b14a-4ea8-8740-960db8feb490&amp;sa=D&amp;source=editors&amp;ust=1650557133783254&amp;usg=AOvVaw0xwiS2yphi7Tole3jhqy-3">https://www.nature.com/articles/d41586-020-02494-z?error=cookies_not_supported&amp;code=21081e62-b14a-4ea8-8740-960db8feb490</a></span>
+                        </p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">st. John, P. (2021, March 31). </span><span class="c6">The untold story of how the
+                                Golden State Killer was found</span><span class="c9">. Los Angeles Times. Retrieved April 18, 2022, from
+                            </span><span class="c5 c9"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.latimes.com/california/story/2020-12-08/man-in-the-window&amp;sa=D&amp;source=editors&amp;ust=1650557133783858&amp;usg=AOvVaw3VNpBOxbZMPy_N0yzaGoK_">https://www.latimes.com/california/story/2020-12-08/man-in-the-window</a></span>
+                        </p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Bureau of Justice Assistance. (2022). </span><span class="c6">The Foreign
+                                Intelligence Surveillance Act of 1978 (FISA)</span><span class="c9">. Retrieved April 18, 2022, from
+                            </span><span class="c5 c9"><a class="c4"
+                                    href="https://www.google.com/url?q=https://bja.ojp.gov/program/it/privacy-civil-liberties/authorities/statutes/1286&amp;sa=D&amp;source=editors&amp;ust=1650557133784489&amp;usg=AOvVaw33ytBC7I4vnVdPlKxX841z">https://bja.ojp.gov/program/it/privacy-civil-liberties/authorities/statutes/1286</a></span>
+                        </p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Foreign Intelligence Surveillance Court. (2022). </span><span class="c6">About the
+                                Foreign Intelligence Surveillance Court | Foreign Intelligence Surveillance Court | United
+                                States</span><span class="c2">. US Courts. Retrieved April 18, 2022, from
+                                https://www.fisc.uscourts.gov/about-foreign-intelligence-surveillance-court</span></p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Walton, R. B. (2013, July 29). </span><span class="c6">Letter to Chairman Leahy,
+                                Committee on the Judiciary, United States Senate</span><span class="c9">. US Courts. Retrieved April 18,
+                                2022, from </span><span class="c5 c9"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.leahy.senate.gov/imo/media/doc/Honorable%2520Patrick%2520J%2520Leahy.pdf&amp;sa=D&amp;source=editors&amp;ust=1650557133785362&amp;usg=AOvVaw15cu1vl81eJ5m80GJRLN0M">https://www.leahy.senate.gov/imo/media/doc/Honorable%20Patrick%20J%20Leahy.pdf</a></span>
+                        </p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Lucas, R. (2019, December 22). </span><span class="c6">Scathing Report Puts Secret
+                                FISA Court Into The Spotlight. Will Congress Act?</span><span class="c9">&nbsp;NPR. Retrieved April 18,
+                                2022, from </span><span class="c5 c9"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.npr.org/2019/12/22/790281142/scathing-report-puts-secret-fisa-court-into-the-spotlight-will-congress-act&amp;sa=D&amp;source=editors&amp;ust=1650557133786070&amp;usg=AOvVaw1dEddILxqFLiLxnaPNk6bn">https://www.npr.org/2019/12/22/790281142/scathing-report-puts-secret-fisa-court-into-the-spotlight-will-congress-act</a></span>
+                        </p>
+                        <p class="c1 c16"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Harris, M. (2021, September 30). </span><span class="c6">How a Secret Google Geofence
+                                Warrant Helped Catch the Capitol Riot Mob</span><span class="c2">. Wired. Retrieved April 18, 2022, from
+                                https://www.wired.com/story/capitol-riot-google-geofence-warrant/</span></p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Worth, K. (2018, April 19). </span><span class="c6">How DNA Transfer Framed Lukis
+                                Anderson for Murder</span><span class="c2">. The Marshall Project. Retrieved April 18, 2022, from
+                                https://www.themarshallproject.org/2018/04/19/framed-for-murder-by-his-own-dna</span></p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Ramirez, A. (2020, March 10). </span><span class="c6">Police Need a Warrant to
+                                Collect DNA We Inevitably Leave Behind | News &amp; Commentary</span><span class="c2">. American Civil
+                                Liberties Union. Retrieved April 18, 2022, from
+                                https://www.aclu.org/news/privacy-technology/police-need-a-warrant-to-collect-dna-we-inevitably-leave-behind</span>
+                        </p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Goray, M., &amp; van Oorschot, R. A. (2015). The complexities of DNA transfer during
+                                a social setting. </span><span class="c6">Legal medicine (Tokyo, Japan)</span><span class="c9">,
+                            </span><span class="c6">17</span><span class="c2">(2), 82&ndash;91.
+                                https://doi.org/10.1016/j.legalmed.2014.10.003</span></p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">O&rsquo;Brien, D. (2016, April 27). </span><span class="c6">No Safe Harbor: How NSA
+                                Spying Undermined U.S. Tech and Europeans&rsquo;</span><span class="c2">. Electronic Frontier Foundation.
+                                Retrieved April 18, 2022, from
+                                https://www.eff.org/deeplinks/2015/10/europes-court-justice-nsa-surveilance</span></p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Vladeck, S. I. (2021, November 15). </span><span class="c6">Expert Opinion on the
+                                Current State of U.S. Surveillance Law and Authorities</span><span class="c9">. DSK. Retrieved April 18,
+                                2022, from </span><span class="c5 c9"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.datenschutzkonferenz-online.de/media/weitere_dokumente/Vladek_Rechtsgutachten_DSK_en.pdf&amp;sa=D&amp;source=editors&amp;ust=1650557133788172&amp;usg=AOvVaw0lZKV_BsfIg9ofB7UnlXuQ">https://www.datenschutzkonferenz-online.de/media/weitere_dokumente/Vladek_Rechtsgutachten_DSK_en.pdf</a></span>
+                        </p>
+                        <p class="c1 c16"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Fennessy, C. (2022, February 7). </span><span class="c6">The Austrian Google
+                                Analytics decision: The race is on</span><span class="c2">. International Association of Privacy
+                                Professionals. Retrieved April 18, 2022, from
+                                https://iapp.org/news/a/the-austrian-google-analytics-decision-the-race-is-on/</span></p>
+                        <p class="c1 c16"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Congressional Research Service. (2021, December 9). </span><span class="c6">Digital
+                                Trade and U.S. Trade Policy</span><span class="c2">. Retrieved April 18, 2022, from
+                                https://sgp.fas.org/crs/misc/R44565.pdf</span></p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">The Child Advocacy Center of Lapeer County. (2022). </span><span class="c6">Human
+                                Trafficking and the Internet</span><span class="c2">. Retrieved April 18, 2022, from
+                                https://caclapeer.org/human-trafficking-the-internet/#</span></p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Tokson, M. (2021, January 15). </span><span class="c6">Inescapable
+                                Surveillance</span><span class="c2">. Cornell Law Review. Retrieved April 18, 2022, from
+                                https://www.cornelllawreview.org/2021/01/15/inescapable-surveillance/</span></p>
+                        <p class="c1"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Vigliarolo, B. (2021, March 23). </span><span class="c6">Data literacy gap among
+                                young people could impact businesses</span><span class="c9">. TechRepublic. Retrieved April 18, 2022, from
+                            </span><span class="c5 c9"><a class="c4"
+                                    href="https://www.google.com/url?q=https://www.techrepublic.com/article/data-literacy-gap-among-young-people-could-impact-businesses/&amp;sa=D&amp;source=editors&amp;ust=1650557133790001&amp;usg=AOvVaw0B9KtKDpbnKdebKJaMfU2u">https://www.techrepublic.com/article/data-literacy-gap-among-young-people-could-impact-businesses/</a></span>
+                        </p>
+                        <p class="c1 c16"><span class="c2"></span></p>
+                        <p class="c3"><span class="c9">Duff, J. C. (2020, April 17). </span><span class="c6">Report of the Director of the
+                                Administrative Office of the U.S. Courts on activities of the Foreign Intelligence Surveillance Courts for
+                                2019</span><span class="c2">. US Courts. Retrieved April 18, 2022, from
+                                https://www.uscourts.gov/sites/default/files/fisc_annual_report_2019_0.pdf</span></p>
+                        <p class="c1 c16"><span class="c2"></span></p>
+                        <p class="c1"><span class="c2"></span></p>
+                </main>
+        </div>
+
+        <footer>
+                <div class="footer-wrapper"></div>
+        </footer>
+</body>
+
+</html>
