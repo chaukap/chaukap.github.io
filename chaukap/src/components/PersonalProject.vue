@@ -1,5 +1,5 @@
 <template>
-  <Link link="https://reflectify.io/" description="My Spotify API hobby project, Reflectify"/>
+  <Link link="https://chaukap.github.io/surveillance-in-bulk/warrants" description="A Report on Digital Warrants in the United States"/>
 </template>
 
 <script>
@@ -15,6 +15,6 @@ export default {
 
 <style scoped>
 :deep(.link-container) {
-    background-image: url("../assets/HobbyProjects.png");
+    background-image: url("../assets/surveillance-in-bulk.png");
 }
 </style>

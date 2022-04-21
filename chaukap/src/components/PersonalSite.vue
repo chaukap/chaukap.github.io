@@ -28,11 +28,11 @@
 <script>
 import TitleCard from './TitleCard.vue'
 import Background from './Background.vue'
-import Instagram from './Instagram.vue'
+import Instagram from './HelmetDetection.vue'
 import LinkedIn from './LinkedIn.vue'
 import GitHub from './GitHub.vue'
 import PersonalProject from './PersonalProject.vue'
-import Pinterest from './Pinterest.vue'
+import Pinterest from './Reidentification.vue'
 import Shriners from './Berkeley.vue'
 
 export default {
